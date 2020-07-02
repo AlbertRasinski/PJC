@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CPostacGracza.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CPrzeciwnik.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CRysowanieOkienka.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CGra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CSterowanie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CPociski.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CPolozenie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CZycie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CElementOtoczenia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CPoziom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CPokoj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CFly.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="COgien.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CHeadless.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CFlyShooting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CTurret.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CBossTwins.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CBossFlyMaster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CPostacGracza.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CPrzeciwnik.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CRysowanieOkienka.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CGra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CSterowanie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CPociski.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CPolozenie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CZycie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CElementOtoczenia.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CPoziom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CPokoj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CFly.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="COgien.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CHeadless.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CFlyShooting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CTurret.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CBossTwins.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CBossFlyMaster.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

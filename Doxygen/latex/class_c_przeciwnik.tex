@@ -1,0 +1,178 @@
+\hypertarget{class_c_przeciwnik}{}\doxysection{C\+Przeciwnik Class Reference}
+\label{class_c_przeciwnik}\index{CPrzeciwnik@{CPrzeciwnik}}
+
+
+klasa \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} jest klasa czysto wirtualna, sluzy do wywolania akcji przeciwnika roznych typow  
+
+
+
+
+{\ttfamily \#include $<$C\+Przeciwnik.\+h$>$}
+
+Inheritance diagram for C\+Przeciwnik\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.415929cm]{class_c_przeciwnik}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_c_przeciwnik_a2a14d371aa49cd348765b7e68b29e21d}{zachowanie\+Przeciwnika}} (int graczX, int graczY, sf\+::\+Time elapsed, std\+::vector$<$ \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} $\ast$ $>$ \&wek)=0
+\begin{DoxyCompactList}\small\item\em metoda zachowanie\+Przeciwnika jest funkcja wirtualna, jest nadpisywana przez inna metode o tej samej nazwie klasy pochodnej \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}} \mbox{\hyperlink{class_c_przeciwnik_a02a1d3aa7b043ad98acecd8902513190}{polozenie\+Przeciwnika}}
+\begin{DoxyCompactList}\small\item\em atrybut \mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}} polozenie\+Przeciwnika okresla polozenie przeciwnika \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_c_zycie}{C\+Zycie}} \mbox{\hyperlink{class_c_przeciwnik_a9e8aba37dbd8d9252ee818698f320dbe}{zycie\+Przeciwnika}}
+\begin{DoxyCompactList}\small\item\em atrybut \mbox{\hyperlink{struct_c_zycie}{C\+Zycie}} zycie\+Przeciwnika ile ma zycia \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_przeciwnik_a7b2b5cceee0497b484f51725c830bf99}{rozmiarX}}
+\begin{DoxyCompactList}\small\item\em atrybut rozmiarX okreslaja jak szeroki jest, sluzy do okreslenia kontaktu postaci gracza z przeciwnikiem oraz hitboxow \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_przeciwnik_aa555f3641af3d8c94ce08f9e0e53209c}{rozmiarY}}
+\begin{DoxyCompactList}\small\item\em atrybut rozmiarY okreslaja jak wysoki jest, sluzy do okreslenia kontaktu postaci gracza z przeciwnikiem oraz hitboxow \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_c_przeciwnik_a3c575699c8362c80bca69b8806b143b0}{typ\+Przeciwnika}}
+\begin{DoxyCompactList}\small\item\em atrybut typ\+Przeciwnika okreslajacy jakiego typu jest przeciwnik \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_c_pociski}{C\+Pociski}} $>$ \mbox{\hyperlink{class_c_przeciwnik_a1675895ec11dc719911061446a31c87e}{pociski\+Przeciwnika}}
+\begin{DoxyCompactList}\small\item\em wektor \mbox{\hyperlink{class_c_pociski}{C\+Pociski}} pociski\+Przeciwnika pozwala na strzelanie przez przeciwnika \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}} $>$ \mbox{\hyperlink{class_c_przeciwnik_aac093384b60b2afaa28053c376c66d56}{poczatkowe\+Polozenie\+Gracza}}
+\begin{DoxyCompactList}\small\item\em wektor \mbox{\hyperlink{class_c_pociski}{C\+Pociski}} poczatkowe\+Polozenie\+Gracza pozwala na okreslenie kierunku strzalow przeciwnika \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_przeciwnik_a475e236398cbf05ebdf7450155ba5e05}{C\+Przeciwnik}} (int x, int y, int max, int obecne, int rozmiar\+X\+\_\+, int rozmiar\+Y\+\_\+, char typ\+Przeciwnika\+\_\+)
+\begin{DoxyCompactList}\small\item\em kontruktor klasy, inicjowanie atrybutow \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+klasa \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} jest klasa czysto wirtualna, sluzy do wywolania akcji przeciwnika roznych typow 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_przeciwnik_a475e236398cbf05ebdf7450155ba5e05}\label{class_c_przeciwnik_a475e236398cbf05ebdf7450155ba5e05}} 
+\index{CPrzeciwnik@{CPrzeciwnik}!CPrzeciwnik@{CPrzeciwnik}}
+\index{CPrzeciwnik@{CPrzeciwnik}!CPrzeciwnik@{CPrzeciwnik}}
+\doxysubsubsection{\texorpdfstring{CPrzeciwnik()}{CPrzeciwnik()}}
+{\footnotesize\ttfamily C\+Przeciwnik\+::\+C\+Przeciwnik (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{max,  }\item[{int}]{obecne,  }\item[{int}]{rozmiar\+X\+\_\+,  }\item[{int}]{rozmiar\+Y\+\_\+,  }\item[{char}]{typ\+Przeciwnika\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+kontruktor klasy, inicjowanie atrybutow 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parametr} & x okresla polozenie \\
+\hline
+{\em parametr} & y okresla polozenie \\
+\hline
+{\em parametr} & max okresla maksymalne zycie \\
+\hline
+{\em parametr} & max okresla obecne zycie \\
+\hline
+{\em parametr} & rozmiar\+X\+\_\+ okresla szerkosc przeciwnika (hitbox+kolizja gracza) \\
+\hline
+{\em parametr} & rozmiar\+Y\+\_\+ okresla wysokosc przeciwnika (hitbox+kolizja gracza) \\
+\hline
+{\em parametr} & typ\+Przeciwnika okresla typ przeciwnika \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_przeciwnik_a2a14d371aa49cd348765b7e68b29e21d}\label{class_c_przeciwnik_a2a14d371aa49cd348765b7e68b29e21d}} 
+\index{CPrzeciwnik@{CPrzeciwnik}!zachowaniePrzeciwnika@{zachowaniePrzeciwnika}}
+\index{zachowaniePrzeciwnika@{zachowaniePrzeciwnika}!CPrzeciwnik@{CPrzeciwnik}}
+\doxysubsubsection{\texorpdfstring{zachowaniePrzeciwnika()}{zachowaniePrzeciwnika()}}
+{\footnotesize\ttfamily virtual void C\+Przeciwnik\+::zachowanie\+Przeciwnika (\begin{DoxyParamCaption}\item[{int}]{graczX,  }\item[{int}]{graczY,  }\item[{sf\+::\+Time}]{elapsed,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} $\ast$ $>$ \&}]{wek }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+metoda zachowanie\+Przeciwnika jest funkcja wirtualna, jest nadpisywana przez inna metode o tej samej nazwie klasy pochodnej 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parametr} & graczX okresla obecne polozenie X postaci gracza \\
+\hline
+{\em parametr} & graczY okresla obecne polozenie Y postaci gracza \\
+\hline
+{\em parametr} & elapsed pozwala na okreslenie ile czasu minelo od poprzedniej tury obliczen \\
+\hline
+{\em wektor} & wskaznikow \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}}, pozwala m.\+in. na przyzwanie nowych przeciwnikow (\mbox{\hyperlink{class_c_boss_fly_master}{C\+Boss\+Fly\+Master}}) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_c_boss_twins_aef6b529ac67dfcb56621dc6f428599c0}{C\+Boss\+Twins}}, \mbox{\hyperlink{class_c_headless_a1c7d4dde55eba4356028d46683104580}{C\+Headless}}, \mbox{\hyperlink{class_c_boss_fly_master_aa0c0f0408b2f1ba8044faf5ba69e0f00}{C\+Boss\+Fly\+Master}}, \mbox{\hyperlink{class_c_fly_shooting_a027228447574e1fed574c7d671c386ee}{C\+Fly\+Shooting}}, \mbox{\hyperlink{class_c_turret_a96954796adb76aa0969c1baae011e9d8}{C\+Turret}}, \mbox{\hyperlink{class_c_fly_a526092b0d47d200fc2b05422d2cb3343}{C\+Fly}}, and \mbox{\hyperlink{class_c_ogien_acc08b60c6c72f14cb5080036c33175a7}{C\+Ogien}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_przeciwnik_a1675895ec11dc719911061446a31c87e}\label{class_c_przeciwnik_a1675895ec11dc719911061446a31c87e}} 
+\index{CPrzeciwnik@{CPrzeciwnik}!pociskiPrzeciwnika@{pociskiPrzeciwnika}}
+\index{pociskiPrzeciwnika@{pociskiPrzeciwnika}!CPrzeciwnik@{CPrzeciwnik}}
+\doxysubsubsection{\texorpdfstring{pociskiPrzeciwnika}{pociskiPrzeciwnika}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_c_pociski}{C\+Pociski}}$>$ C\+Przeciwnik\+::pociski\+Przeciwnika}
+
+
+
+wektor \mbox{\hyperlink{class_c_pociski}{C\+Pociski}} pociski\+Przeciwnika pozwala na strzelanie przez przeciwnika 
+
+\mbox{\Hypertarget{class_c_przeciwnik_aac093384b60b2afaa28053c376c66d56}\label{class_c_przeciwnik_aac093384b60b2afaa28053c376c66d56}} 
+\index{CPrzeciwnik@{CPrzeciwnik}!poczatkowePolozenieGracza@{poczatkowePolozenieGracza}}
+\index{poczatkowePolozenieGracza@{poczatkowePolozenieGracza}!CPrzeciwnik@{CPrzeciwnik}}
+\doxysubsubsection{\texorpdfstring{poczatkowePolozenieGracza}{poczatkowePolozenieGracza}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}}$>$ C\+Przeciwnik\+::poczatkowe\+Polozenie\+Gracza}
+
+
+
+wektor \mbox{\hyperlink{class_c_pociski}{C\+Pociski}} poczatkowe\+Polozenie\+Gracza pozwala na okreslenie kierunku strzalow przeciwnika 
+
+\mbox{\Hypertarget{class_c_przeciwnik_a02a1d3aa7b043ad98acecd8902513190}\label{class_c_przeciwnik_a02a1d3aa7b043ad98acecd8902513190}} 
+\index{CPrzeciwnik@{CPrzeciwnik}!polozeniePrzeciwnika@{polozeniePrzeciwnika}}
+\index{polozeniePrzeciwnika@{polozeniePrzeciwnika}!CPrzeciwnik@{CPrzeciwnik}}
+\doxysubsubsection{\texorpdfstring{polozeniePrzeciwnika}{polozeniePrzeciwnika}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}} C\+Przeciwnik\+::polozenie\+Przeciwnika}
+
+
+
+atrybut \mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}} polozenie\+Przeciwnika okresla polozenie przeciwnika 
+
+\mbox{\Hypertarget{class_c_przeciwnik_a7b2b5cceee0497b484f51725c830bf99}\label{class_c_przeciwnik_a7b2b5cceee0497b484f51725c830bf99}} 
+\index{CPrzeciwnik@{CPrzeciwnik}!rozmiarX@{rozmiarX}}
+\index{rozmiarX@{rozmiarX}!CPrzeciwnik@{CPrzeciwnik}}
+\doxysubsubsection{\texorpdfstring{rozmiarX}{rozmiarX}}
+{\footnotesize\ttfamily int C\+Przeciwnik\+::rozmiarX}
+
+
+
+atrybut rozmiarX okreslaja jak szeroki jest, sluzy do okreslenia kontaktu postaci gracza z przeciwnikiem oraz hitboxow 
+
+\mbox{\Hypertarget{class_c_przeciwnik_aa555f3641af3d8c94ce08f9e0e53209c}\label{class_c_przeciwnik_aa555f3641af3d8c94ce08f9e0e53209c}} 
+\index{CPrzeciwnik@{CPrzeciwnik}!rozmiarY@{rozmiarY}}
+\index{rozmiarY@{rozmiarY}!CPrzeciwnik@{CPrzeciwnik}}
+\doxysubsubsection{\texorpdfstring{rozmiarY}{rozmiarY}}
+{\footnotesize\ttfamily int C\+Przeciwnik\+::rozmiarY}
+
+
+
+atrybut rozmiarY okreslaja jak wysoki jest, sluzy do okreslenia kontaktu postaci gracza z przeciwnikiem oraz hitboxow 
+
+\mbox{\Hypertarget{class_c_przeciwnik_a3c575699c8362c80bca69b8806b143b0}\label{class_c_przeciwnik_a3c575699c8362c80bca69b8806b143b0}} 
+\index{CPrzeciwnik@{CPrzeciwnik}!typPrzeciwnika@{typPrzeciwnika}}
+\index{typPrzeciwnika@{typPrzeciwnika}!CPrzeciwnik@{CPrzeciwnik}}
+\doxysubsubsection{\texorpdfstring{typPrzeciwnika}{typPrzeciwnika}}
+{\footnotesize\ttfamily char C\+Przeciwnik\+::typ\+Przeciwnika}
+
+
+
+atrybut typ\+Przeciwnika okreslajacy jakiego typu jest przeciwnik 
+
+\mbox{\Hypertarget{class_c_przeciwnik_a9e8aba37dbd8d9252ee818698f320dbe}\label{class_c_przeciwnik_a9e8aba37dbd8d9252ee818698f320dbe}} 
+\index{CPrzeciwnik@{CPrzeciwnik}!zyciePrzeciwnika@{zyciePrzeciwnika}}
+\index{zyciePrzeciwnika@{zyciePrzeciwnika}!CPrzeciwnik@{CPrzeciwnik}}
+\doxysubsubsection{\texorpdfstring{zyciePrzeciwnika}{zyciePrzeciwnika}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_zycie}{C\+Zycie}} C\+Przeciwnik\+::zycie\+Przeciwnika}
+
+
+
+atrybut \mbox{\hyperlink{struct_c_zycie}{C\+Zycie}} zycie\+Przeciwnika ile ma zycia 
+

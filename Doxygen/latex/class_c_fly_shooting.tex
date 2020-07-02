@@ -1,0 +1,110 @@
+\hypertarget{class_c_fly_shooting}{}\doxysection{C\+Fly\+Shooting Class Reference}
+\label{class_c_fly_shooting}\index{CFlyShooting@{CFlyShooting}}
+
+
+klasa pochodna (polimorfizm po klasie bazowej \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} ) \mbox{\hyperlink{class_c_fly_shooting}{C\+Fly\+Shooting}} okresla zachowanie tego typu przeciwnika  
+
+
+
+
+{\ttfamily \#include $<$C\+Fly\+Shooting.\+h$>$}
+
+Inheritance diagram for C\+Fly\+Shooting\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_fly_shooting}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_fly_shooting_a7ecfb5ad13ce6252fca5446bdbc616cc}{C\+Fly\+Shooting}} (int x, int y)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_c_fly_shooting_a027228447574e1fed574c7d671c386ee}{zachowanie\+Przeciwnika}} (int graczX, int graczY, sf\+::\+Time elapsed, std\+::vector$<$ \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} $\ast$ $>$ \&wek)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_c_fly_shooting_a4e75ad43dede9bda643857257d5db5a9}{odliczanie}}
+\begin{DoxyCompactList}\small\item\em atrybut odliczanie okresla ile pozostalo czasu do kolejnego wystrzelenia \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const double \mbox{\hyperlink{class_c_fly_shooting_a29bfef627e9c4dbd73a784e63459639c}{czas\+Pomiedzy\+Strzalami}} = 1.\+8
+\begin{DoxyCompactList}\small\item\em statyczna stala czas\+Pomiedzy\+Strzalami okresla podstawowy czas pomiedzy kolejnymi momentami gdy przeciwnik strzela \end{DoxyCompactList}\item 
+static const double \mbox{\hyperlink{class_c_fly_shooting_a48b58cfb0524124c84fe614ea0e6c568}{Predkosc\+Fly}} = 0.\+01
+\begin{DoxyCompactList}\small\item\em statyczna stala Predkosc\+Fly jest przydatna podczas obliczania predkosci poruszania sie \end{DoxyCompactList}\item 
+static const double \mbox{\hyperlink{class_c_fly_shooting_aa01cbad310667e0eb90d5a3615d2a4cc}{predkosc\+Lezki\+Przeciwnika}} = 0.\+4
+\begin{DoxyCompactList}\small\item\em statyczna stala predkosc\+Lezki\+Przeciwnika jest przydatna podczas obliczania predkosci poruszania sie pociskow przeciwnika \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+klasa pochodna (polimorfizm po klasie bazowej \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} ) \mbox{\hyperlink{class_c_fly_shooting}{C\+Fly\+Shooting}} okresla zachowanie tego typu przeciwnika 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_fly_shooting_a7ecfb5ad13ce6252fca5446bdbc616cc}\label{class_c_fly_shooting_a7ecfb5ad13ce6252fca5446bdbc616cc}} 
+\index{CFlyShooting@{CFlyShooting}!CFlyShooting@{CFlyShooting}}
+\index{CFlyShooting@{CFlyShooting}!CFlyShooting@{CFlyShooting}}
+\doxysubsubsection{\texorpdfstring{CFlyShooting()}{CFlyShooting()}}
+{\footnotesize\ttfamily C\+Fly\+Shooting\+::\+C\+Fly\+Shooting (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\textbackslash{} konstruktor pozwala na inicjalizacje atrybutow klasy \mbox{\hyperlink{class_c_fly_shooting}{C\+Fly\+Shooting}} oraz atrybutow klasy bazowej 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_fly_shooting_a027228447574e1fed574c7d671c386ee}\label{class_c_fly_shooting_a027228447574e1fed574c7d671c386ee}} 
+\index{CFlyShooting@{CFlyShooting}!zachowaniePrzeciwnika@{zachowaniePrzeciwnika}}
+\index{zachowaniePrzeciwnika@{zachowaniePrzeciwnika}!CFlyShooting@{CFlyShooting}}
+\doxysubsubsection{\texorpdfstring{zachowaniePrzeciwnika()}{zachowaniePrzeciwnika()}}
+{\footnotesize\ttfamily void C\+Fly\+Shooting\+::zachowanie\+Przeciwnika (\begin{DoxyParamCaption}\item[{int}]{graczX,  }\item[{int}]{graczY,  }\item[{sf\+::\+Time}]{elapsed,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} $\ast$ $>$ \&}]{wek }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+\textbackslash{} metoda \mbox{\hyperlink{class_c_fly_shooting_a027228447574e1fed574c7d671c386ee}{zachowanie\+Przeciwnika()}} przyslania funkcje klasy \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}}, okresla jak zachowuje sie nasz przeciwnik. Przeciwnik oddala sie od postaci gracza, co pewien czas strzela pocisk w kierunku postaci gracza 
+
+Implements \mbox{\hyperlink{class_c_przeciwnik_a2a14d371aa49cd348765b7e68b29e21d}{C\+Przeciwnik}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_fly_shooting_a29bfef627e9c4dbd73a784e63459639c}\label{class_c_fly_shooting_a29bfef627e9c4dbd73a784e63459639c}} 
+\index{CFlyShooting@{CFlyShooting}!czasPomiedzyStrzalami@{czasPomiedzyStrzalami}}
+\index{czasPomiedzyStrzalami@{czasPomiedzyStrzalami}!CFlyShooting@{CFlyShooting}}
+\doxysubsubsection{\texorpdfstring{czasPomiedzyStrzalami}{czasPomiedzyStrzalami}}
+{\footnotesize\ttfamily const double C\+Fly\+Shooting\+::czas\+Pomiedzy\+Strzalami = 1.\+8\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+statyczna stala czas\+Pomiedzy\+Strzalami okresla podstawowy czas pomiedzy kolejnymi momentami gdy przeciwnik strzela 
+
+\mbox{\Hypertarget{class_c_fly_shooting_a4e75ad43dede9bda643857257d5db5a9}\label{class_c_fly_shooting_a4e75ad43dede9bda643857257d5db5a9}} 
+\index{CFlyShooting@{CFlyShooting}!odliczanie@{odliczanie}}
+\index{odliczanie@{odliczanie}!CFlyShooting@{CFlyShooting}}
+\doxysubsubsection{\texorpdfstring{odliczanie}{odliczanie}}
+{\footnotesize\ttfamily double C\+Fly\+Shooting\+::odliczanie\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+atrybut odliczanie okresla ile pozostalo czasu do kolejnego wystrzelenia 
+
+\mbox{\Hypertarget{class_c_fly_shooting_a48b58cfb0524124c84fe614ea0e6c568}\label{class_c_fly_shooting_a48b58cfb0524124c84fe614ea0e6c568}} 
+\index{CFlyShooting@{CFlyShooting}!PredkoscFly@{PredkoscFly}}
+\index{PredkoscFly@{PredkoscFly}!CFlyShooting@{CFlyShooting}}
+\doxysubsubsection{\texorpdfstring{PredkoscFly}{PredkoscFly}}
+{\footnotesize\ttfamily const double C\+Fly\+Shooting\+::\+Predkosc\+Fly = 0.\+01\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+statyczna stala Predkosc\+Fly jest przydatna podczas obliczania predkosci poruszania sie 
+
+\mbox{\Hypertarget{class_c_fly_shooting_aa01cbad310667e0eb90d5a3615d2a4cc}\label{class_c_fly_shooting_aa01cbad310667e0eb90d5a3615d2a4cc}} 
+\index{CFlyShooting@{CFlyShooting}!predkoscLezkiPrzeciwnika@{predkoscLezkiPrzeciwnika}}
+\index{predkoscLezkiPrzeciwnika@{predkoscLezkiPrzeciwnika}!CFlyShooting@{CFlyShooting}}
+\doxysubsubsection{\texorpdfstring{predkoscLezkiPrzeciwnika}{predkoscLezkiPrzeciwnika}}
+{\footnotesize\ttfamily const double C\+Fly\+Shooting\+::predkosc\+Lezki\+Przeciwnika = 0.\+4\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+statyczna stala predkosc\+Lezki\+Przeciwnika jest przydatna podczas obliczania predkosci poruszania sie pociskow przeciwnika 
+

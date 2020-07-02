@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['pociskiprzeciwnika_365',['pociskiPrzeciwnika',['../class_c_przeciwnik.html#a1675895ec11dc719911061446a31c87e',1,'CPrzeciwnik']]],
+  ['poczatkowepolozeniegracza_366',['poczatkowePolozenieGracza',['../class_c_przeciwnik.html#aac093384b60b2afaa28053c376c66d56',1,'CPrzeciwnik']]],
+  ['poczatkowepolozeniepociskow_367',['poczatkowePolozeniePociskow',['../class_c_pociski.html#aa358610202a33ae2a2a71bf4db229d9d',1,'CPociski']]],
+  ['podczasskoku_368',['podczasSkoku',['../class_c_headless.html#a74427024423652004f95af3cbc2f1948',1,'CHeadless']]],
+  ['polozenieotoczenia_369',['polozenieOtoczenia',['../class_celement_otoczenia.html#aa9439a0aa6df112a33b4ee837a8022a7',1,'CelementOtoczenia']]],
+  ['polozeniepostaci_370',['polozeniePostaci',['../class_c_postac_gracza.html#a607ef75234d80bbeb950d8e805ea2020',1,'CPostacGracza']]],
+  ['polozeniepostacipoczatkowe_371',['polozeniePostaciPoczatkowe',['../class_c_postac_gracza.html#a60767c4b9d6e5a7a48473ba3af34c937',1,'CPostacGracza']]],
+  ['polozenieprzeciwnika_372',['polozeniePrzeciwnika',['../class_c_przeciwnik.html#a02a1d3aa7b043ad98acecd8902513190',1,'CPrzeciwnik']]],
+  ['postac_373',['postac',['../class_c_gra.html#a16c1836d8e1dddb45bf8c69c03209166',1,'CGra']]],
+  ['poziom_374',['poziom',['../class_c_gra.html#a1e104a807f6afd09e76976ec2338c063',1,'CGra::poziom()'],['../class_c_poziom.html#a8c4cd33618385576601e7d93f064ff05',1,'CPoziom::poziom()']]],
+  ['pozx_375',['pozX',['../class_c_headless.html#a31ca54c517b4ce19acd52c089ab1a37e',1,'CHeadless']]],
+  ['pozy_376',['pozY',['../class_c_headless.html#a2a8057892ce5ed723dc0520d9a6395d1',1,'CHeadless']]],
+  ['pozycjax_377',['pozycjaX',['../struct_c_polozenie.html#a0cfdd41f741a288b7458d1f21f61d2ac',1,'CPolozenie']]],
+  ['pozycjay_378',['pozycjaY',['../struct_c_polozenie.html#a3ab345deef4db9739cd7fa3802a25db4',1,'CPolozenie']]],
+  ['predkosc_379',['predkosc',['../class_c_headless.html#a909b319f8f5b5936998a1c3f2c1fc1ad',1,'CHeadless::predkosc()'],['../class_c_postac_gracza.html#a862bff4dd513c8f220ad656bec00a5e0',1,'CPostacGracza::predkosc()']]],
+  ['predkoscfly_380',['PredkoscFly',['../class_c_fly.html#abb66f59253f7d39731ebadfd832f3597',1,'CFly::PredkoscFly()'],['../class_c_fly_shooting.html#a48b58cfb0524124c84fe614ea0e6c568',1,'CFlyShooting::PredkoscFly()']]],
+  ['predkosclezkiprzeciwnika_381',['predkoscLezkiPrzeciwnika',['../class_c_fly_shooting.html#aa01cbad310667e0eb90d5a3615d2a4cc',1,'CFlyShooting::predkoscLezkiPrzeciwnika()'],['../class_c_turret.html#a9200bab3b1b5f91df5d1d13a6f57a1db',1,'CTurret::predkoscLezkiPrzeciwnika()']]],
+  ['predkoscpociskow_382',['predkoscPociskow',['../class_c_postac_gracza.html#aed3a27c85ee77819e64e1a8f96ca44a2',1,'CPostacGracza']]],
+  ['predkoscporuszania_383',['predkoscPoruszania',['../class_c_boss_fly_master.html#a05c1b98d86b5f4308ef58b3e33e58ac5',1,'CBossFlyMaster::predkoscPoruszania()'],['../class_c_boss_twins.html#ac7879de99d420fb03d9df697f8586b22',1,'CBossTwins::predkoscPoruszania()']]],
+  ['predkoscszarzy_384',['predkoscSzarzy',['../class_c_boss_twins.html#afdd18b16a0dd1c0d76a725dd39eea440',1,'CBossTwins']]],
+  ['przeciwnicy_385',['przeciwnicy',['../class_c_pokoj.html#ab94cc2265cd154879e62f3e649a789fe',1,'CPokoj']]]
+];

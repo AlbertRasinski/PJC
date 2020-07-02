@@ -1,0 +1,127 @@
+\hypertarget{class_c_menu}{}\doxysection{C\+Menu Class Reference}
+\label{class_c_menu}\index{CMenu@{CMenu}}
+
+
+klasa Cmenu, ktorej zadaniem jest mozliwosc wygenerownie menu oraz umozliwienie graczowi poruszanie po nim  
+
+
+
+
+{\ttfamily \#include $<$C\+Menu.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_menu_ab5cf463c2a9843f0246cd3996de366be}{poruszanie\+Po\+Menu}} ()
+\item 
+\mbox{\hyperlink{class_c_menu_a460ad6435608f72ee6b3a9a688f5a9b7}{C\+Menu}} ()
+\item 
+\mbox{\hyperlink{class_c_menu_ab2ab7e24e646bcb61ad0b9d8484f2604}{$\sim$\+C\+Menu}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c_menu_a27ca5a39024beb584765c48274b2a219}{tryb}}
+\begin{DoxyCompactList}\small\item\em atrybut tryb okresla, na ktorym ekranie menu aktualnie sie znajdujemy \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_menu_ae5a86ed88cb335d80f5686e4bd434c8c}{wybor}}
+\begin{DoxyCompactList}\small\item\em atrybut wybor okresla, ktora opcja w menu jest obecnie zaznaczona \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_gra}{C\+Gra}} $\ast$ \mbox{\hyperlink{class_c_menu_abb909eb96959e87bdf49bc76ba91b33b}{gra}}
+\begin{DoxyCompactList}\small\item\em atrybut \mbox{\hyperlink{class_c_gra}{C\+Gra}} gra (agregacja), umozliwia na utworzenie nowej gry/wczytania ostatniego stanu gry \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_menu_a9691ea732edfdc133b544c0f6e611e25}{kontrola\+Sterowania}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_c_menu_a84c9b5bdb6c445b1fb5427343581d525}{kontrola}}
+\begin{DoxyCompactList}\small\item\em atrybut kontrola okresla czy po wcisnieciu przycisku puscilismy go (jedno klikniecie-\/jedno przejscie) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_sterowanie}{C\+Sterowanie}} \mbox{\hyperlink{class_c_menu_a3aac8efa42d746e7a247f9157ce7d022}{klaw}}
+\begin{DoxyCompactList}\small\item\em atrybut \mbox{\hyperlink{class_c_sterowanie}{C\+Sterowanie}} klaw (kompozycja) umozliwia wczytanie przyciskow \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+klasa Cmenu, ktorej zadaniem jest mozliwosc wygenerownie menu oraz umozliwienie graczowi poruszanie po nim 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_menu_a460ad6435608f72ee6b3a9a688f5a9b7}\label{class_c_menu_a460ad6435608f72ee6b3a9a688f5a9b7}} 
+\index{CMenu@{CMenu}!CMenu@{CMenu}}
+\index{CMenu@{CMenu}!CMenu@{CMenu}}
+\doxysubsubsection{\texorpdfstring{CMenu()}{CMenu()}}
+{\footnotesize\ttfamily C\+Menu\+::\+C\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\textbackslash{} konstruktor \mbox{\hyperlink{class_c_menu}{C\+Menu}} inizjalizuje atrybuty klasy \mbox{\Hypertarget{class_c_menu_ab2ab7e24e646bcb61ad0b9d8484f2604}\label{class_c_menu_ab2ab7e24e646bcb61ad0b9d8484f2604}} 
+\index{CMenu@{CMenu}!````~CMenu@{$\sim$CMenu}}
+\index{````~CMenu@{$\sim$CMenu}!CMenu@{CMenu}}
+\doxysubsubsection{\texorpdfstring{$\sim$CMenu()}{~CMenu()}}
+{\footnotesize\ttfamily C\+Menu\+::$\sim$\+C\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\textbackslash{} destruktor $\sim$\+C\+Menu sprzata po sobie wkaznik gra 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_menu_a9691ea732edfdc133b544c0f6e611e25}\label{class_c_menu_a9691ea732edfdc133b544c0f6e611e25}} 
+\index{CMenu@{CMenu}!kontrolaSterowania@{kontrolaSterowania}}
+\index{kontrolaSterowania@{kontrolaSterowania}!CMenu@{CMenu}}
+\doxysubsubsection{\texorpdfstring{kontrolaSterowania()}{kontrolaSterowania()}}
+{\footnotesize\ttfamily void C\+Menu\+::kontrola\+Sterowania (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\textbackslash{} metoda \mbox{\hyperlink{class_c_menu_a9691ea732edfdc133b544c0f6e611e25}{kontrola\+Sterowania()}} umozliwia na sprawdzenie czy przycisk po wcisnieciu zostal puszczony. Pozwala to na zabezpieczenie poruszania sie po menu przed przeskakiwaniem przez kilka opcji \mbox{\Hypertarget{class_c_menu_ab5cf463c2a9843f0246cd3996de366be}\label{class_c_menu_ab5cf463c2a9843f0246cd3996de366be}} 
+\index{CMenu@{CMenu}!poruszaniePoMenu@{poruszaniePoMenu}}
+\index{poruszaniePoMenu@{poruszaniePoMenu}!CMenu@{CMenu}}
+\doxysubsubsection{\texorpdfstring{poruszaniePoMenu()}{poruszaniePoMenu()}}
+{\footnotesize\ttfamily void C\+Menu\+::poruszanie\+Po\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\textbackslash{} metoda \mbox{\hyperlink{class_c_menu_ab5cf463c2a9843f0246cd3996de366be}{poruszanie\+Po\+Menu()}} okresla w jaki sposob reaguje menu na dzialania uzytkownika 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_menu_abb909eb96959e87bdf49bc76ba91b33b}\label{class_c_menu_abb909eb96959e87bdf49bc76ba91b33b}} 
+\index{CMenu@{CMenu}!gra@{gra}}
+\index{gra@{gra}!CMenu@{CMenu}}
+\doxysubsubsection{\texorpdfstring{gra}{gra}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_gra}{C\+Gra}}$\ast$ C\+Menu\+::gra}
+
+
+
+atrybut \mbox{\hyperlink{class_c_gra}{C\+Gra}} gra (agregacja), umozliwia na utworzenie nowej gry/wczytania ostatniego stanu gry 
+
+\mbox{\Hypertarget{class_c_menu_a3aac8efa42d746e7a247f9157ce7d022}\label{class_c_menu_a3aac8efa42d746e7a247f9157ce7d022}} 
+\index{CMenu@{CMenu}!klaw@{klaw}}
+\index{klaw@{klaw}!CMenu@{CMenu}}
+\doxysubsubsection{\texorpdfstring{klaw}{klaw}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_sterowanie}{C\+Sterowanie}} C\+Menu\+::klaw\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+atrybut \mbox{\hyperlink{class_c_sterowanie}{C\+Sterowanie}} klaw (kompozycja) umozliwia wczytanie przyciskow 
+
+\mbox{\Hypertarget{class_c_menu_a84c9b5bdb6c445b1fb5427343581d525}\label{class_c_menu_a84c9b5bdb6c445b1fb5427343581d525}} 
+\index{CMenu@{CMenu}!kontrola@{kontrola}}
+\index{kontrola@{kontrola}!CMenu@{CMenu}}
+\doxysubsubsection{\texorpdfstring{kontrola}{kontrola}}
+{\footnotesize\ttfamily bool C\+Menu\+::kontrola\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+atrybut kontrola okresla czy po wcisnieciu przycisku puscilismy go (jedno klikniecie-\/jedno przejscie) 
+
+\mbox{\Hypertarget{class_c_menu_a27ca5a39024beb584765c48274b2a219}\label{class_c_menu_a27ca5a39024beb584765c48274b2a219}} 
+\index{CMenu@{CMenu}!tryb@{tryb}}
+\index{tryb@{tryb}!CMenu@{CMenu}}
+\doxysubsubsection{\texorpdfstring{tryb}{tryb}}
+{\footnotesize\ttfamily int C\+Menu\+::tryb}
+
+
+
+atrybut tryb okresla, na ktorym ekranie menu aktualnie sie znajdujemy 
+
+\mbox{\Hypertarget{class_c_menu_ae5a86ed88cb335d80f5686e4bd434c8c}\label{class_c_menu_ae5a86ed88cb335d80f5686e4bd434c8c}} 
+\index{CMenu@{CMenu}!wybor@{wybor}}
+\index{wybor@{wybor}!CMenu@{CMenu}}
+\doxysubsubsection{\texorpdfstring{wybor}{wybor}}
+{\footnotesize\ttfamily int C\+Menu\+::wybor}
+
+
+
+atrybut wybor okresla, ktora opcja w menu jest obecnie zaznaczona 
+

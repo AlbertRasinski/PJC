@@ -1,0 +1,131 @@
+\hypertarget{class_c_poziom}{}\doxysection{C\+Poziom Class Reference}
+\label{class_c_poziom}\index{CPoziom@{CPoziom}}
+
+
+klasa \mbox{\hyperlink{class_c_poziom}{C\+Poziom}}, pozwala na utworzenie calej planszy, po ktorej porusza sie postac gracza  
+
+
+
+
+{\ttfamily \#include $<$C\+Poziom.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_poziom_a4d7bc35079a0a851c90554c76c79c9b6}{C\+Poziom}} ()
+\begin{DoxyCompactList}\small\item\em kontruktor klasy \mbox{\hyperlink{class_c_poziom_a4d7bc35079a0a851c90554c76c79c9b6}{C\+Poziom()}}, inicjalizacja atrybutow \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_poziom_a3564fc6910f041b7219d7763f2998591}{generuj\+Poziom}} ()
+\begin{DoxyCompactList}\small\item\em metoda \mbox{\hyperlink{class_c_poziom_a3564fc6910f041b7219d7763f2998591}{generuj\+Poziom()}}, tworzy rozklad pokoi na poziomie \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_poziom_a06dc84fba8ab7e5b5bf6a5fe62e1b3b5}{wczytaj\+Poziom}} ()
+\begin{DoxyCompactList}\small\item\em metoda \mbox{\hyperlink{class_c_poziom_a06dc84fba8ab7e5b5bf6a5fe62e1b3b5}{wczytaj\+Poziom()}}, jej zadaniem jest otworzenie plikow z danymi oraz na podstawie wygenerowanego wczesniej rozkladu pokoi (\mbox{\hyperlink{class_c_poziom_a3564fc6910f041b7219d7763f2998591}{generuj\+Poziom()}}) w odpowiednich pokojach generuje elementy otoczenie/przeciwnikow/bossa/treasure \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c_poziom_ad093fb5fc54bb7e714df0db58524f5a0}{liczba\+Pokoi}}
+\begin{DoxyCompactList}\small\item\em atrybut okreslajacy ile jest pokoi na danym poziomie \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_poziom_af8d69230d4858cf55f8a04ea354cd141}{rodzaj\+Przedmiotu}}
+\begin{DoxyCompactList}\small\item\em atrybut rodzaj\+Przedmiotu okresla jaki rodzaj przedmiotu znajduje sie w treasure room \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_pokoj}{C\+Pokoj}} \mbox{\hyperlink{class_c_poziom_a8c4cd33618385576601e7d93f064ff05}{poziom}} \mbox{[}15\mbox{]}\mbox{[}15\mbox{]}
+\begin{DoxyCompactList}\small\item\em tablica 2D \mbox{\hyperlink{class_c_pokoj}{C\+Pokoj}}, okresla ktory pokoj jest jakiego rodzaju i co zawieta \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_c_poziom_af4546f1c9ceb69677927a35858cee69d}{sprawdz\+Poprawnosc\+Generowania}} ()
+\begin{DoxyCompactList}\small\item\em metoda \mbox{\hyperlink{class_c_poziom_af4546f1c9ceb69677927a35858cee69d}{sprawdz\+Poprawnosc\+Generowania()}}, ktora pozwala sprawdzic, czy wegenerowany przez nas poziom \mbox{\hyperlink{class_c_poziom_a3564fc6910f041b7219d7763f2998591}{generuj\+Poziom()}} jest poprawny (min 2 pokoje, ktore maja tylko 1 sasiedni pokoj), przypisuje odpowiednim pokojom czy zawieraja bossa/treasure \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{class_c_poziom_a5a25d34bb08b6b0a86e7a14f7956f0f5}{liczba\+Przedmiotow}} = 12
+\begin{DoxyCompactList}\small\item\em statyczna stala liczba\+Przedmiotow okresla liczbe przedmiotow, ktore zostaly przygotowane \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+klasa \mbox{\hyperlink{class_c_poziom}{C\+Poziom}}, pozwala na utworzenie calej planszy, po ktorej porusza sie postac gracza 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_poziom_a4d7bc35079a0a851c90554c76c79c9b6}\label{class_c_poziom_a4d7bc35079a0a851c90554c76c79c9b6}} 
+\index{CPoziom@{CPoziom}!CPoziom@{CPoziom}}
+\index{CPoziom@{CPoziom}!CPoziom@{CPoziom}}
+\doxysubsubsection{\texorpdfstring{CPoziom()}{CPoziom()}}
+{\footnotesize\ttfamily C\+Poziom\+::\+C\+Poziom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+kontruktor klasy \mbox{\hyperlink{class_c_poziom_a4d7bc35079a0a851c90554c76c79c9b6}{C\+Poziom()}}, inicjalizacja atrybutow 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_poziom_a3564fc6910f041b7219d7763f2998591}\label{class_c_poziom_a3564fc6910f041b7219d7763f2998591}} 
+\index{CPoziom@{CPoziom}!generujPoziom@{generujPoziom}}
+\index{generujPoziom@{generujPoziom}!CPoziom@{CPoziom}}
+\doxysubsubsection{\texorpdfstring{generujPoziom()}{generujPoziom()}}
+{\footnotesize\ttfamily void C\+Poziom\+::generuj\+Poziom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+metoda \mbox{\hyperlink{class_c_poziom_a3564fc6910f041b7219d7763f2998591}{generuj\+Poziom()}}, tworzy rozklad pokoi na poziomie 
+
+\mbox{\Hypertarget{class_c_poziom_af4546f1c9ceb69677927a35858cee69d}\label{class_c_poziom_af4546f1c9ceb69677927a35858cee69d}} 
+\index{CPoziom@{CPoziom}!sprawdzPoprawnoscGenerowania@{sprawdzPoprawnoscGenerowania}}
+\index{sprawdzPoprawnoscGenerowania@{sprawdzPoprawnoscGenerowania}!CPoziom@{CPoziom}}
+\doxysubsubsection{\texorpdfstring{sprawdzPoprawnoscGenerowania()}{sprawdzPoprawnoscGenerowania()}}
+{\footnotesize\ttfamily bool C\+Poziom\+::sprawdz\+Poprawnosc\+Generowania (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+metoda \mbox{\hyperlink{class_c_poziom_af4546f1c9ceb69677927a35858cee69d}{sprawdz\+Poprawnosc\+Generowania()}}, ktora pozwala sprawdzic, czy wegenerowany przez nas poziom \mbox{\hyperlink{class_c_poziom_a3564fc6910f041b7219d7763f2998591}{generuj\+Poziom()}} jest poprawny (min 2 pokoje, ktore maja tylko 1 sasiedni pokoj), przypisuje odpowiednim pokojom czy zawieraja bossa/treasure 
+
+\mbox{\Hypertarget{class_c_poziom_a06dc84fba8ab7e5b5bf6a5fe62e1b3b5}\label{class_c_poziom_a06dc84fba8ab7e5b5bf6a5fe62e1b3b5}} 
+\index{CPoziom@{CPoziom}!wczytajPoziom@{wczytajPoziom}}
+\index{wczytajPoziom@{wczytajPoziom}!CPoziom@{CPoziom}}
+\doxysubsubsection{\texorpdfstring{wczytajPoziom()}{wczytajPoziom()}}
+{\footnotesize\ttfamily void C\+Poziom\+::wczytaj\+Poziom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+metoda \mbox{\hyperlink{class_c_poziom_a06dc84fba8ab7e5b5bf6a5fe62e1b3b5}{wczytaj\+Poziom()}}, jej zadaniem jest otworzenie plikow z danymi oraz na podstawie wygenerowanego wczesniej rozkladu pokoi (\mbox{\hyperlink{class_c_poziom_a3564fc6910f041b7219d7763f2998591}{generuj\+Poziom()}}) w odpowiednich pokojach generuje elementy otoczenie/przeciwnikow/bossa/treasure 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_poziom_ad093fb5fc54bb7e714df0db58524f5a0}\label{class_c_poziom_ad093fb5fc54bb7e714df0db58524f5a0}} 
+\index{CPoziom@{CPoziom}!liczbaPokoi@{liczbaPokoi}}
+\index{liczbaPokoi@{liczbaPokoi}!CPoziom@{CPoziom}}
+\doxysubsubsection{\texorpdfstring{liczbaPokoi}{liczbaPokoi}}
+{\footnotesize\ttfamily int C\+Poziom\+::liczba\+Pokoi}
+
+
+
+atrybut okreslajacy ile jest pokoi na danym poziomie 
+
+\mbox{\Hypertarget{class_c_poziom_a5a25d34bb08b6b0a86e7a14f7956f0f5}\label{class_c_poziom_a5a25d34bb08b6b0a86e7a14f7956f0f5}} 
+\index{CPoziom@{CPoziom}!liczbaPrzedmiotow@{liczbaPrzedmiotow}}
+\index{liczbaPrzedmiotow@{liczbaPrzedmiotow}!CPoziom@{CPoziom}}
+\doxysubsubsection{\texorpdfstring{liczbaPrzedmiotow}{liczbaPrzedmiotow}}
+{\footnotesize\ttfamily const int C\+Poziom\+::liczba\+Przedmiotow = 12\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+statyczna stala liczba\+Przedmiotow okresla liczbe przedmiotow, ktore zostaly przygotowane 
+
+\mbox{\Hypertarget{class_c_poziom_a8c4cd33618385576601e7d93f064ff05}\label{class_c_poziom_a8c4cd33618385576601e7d93f064ff05}} 
+\index{CPoziom@{CPoziom}!poziom@{poziom}}
+\index{poziom@{poziom}!CPoziom@{CPoziom}}
+\doxysubsubsection{\texorpdfstring{poziom}{poziom}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_pokoj}{C\+Pokoj}} C\+Poziom\+::poziom\mbox{[}15\mbox{]}\mbox{[}15\mbox{]}}
+
+
+
+tablica 2D \mbox{\hyperlink{class_c_pokoj}{C\+Pokoj}}, okresla ktory pokoj jest jakiego rodzaju i co zawieta 
+
+\mbox{\Hypertarget{class_c_poziom_af8d69230d4858cf55f8a04ea354cd141}\label{class_c_poziom_af8d69230d4858cf55f8a04ea354cd141}} 
+\index{CPoziom@{CPoziom}!rodzajPrzedmiotu@{rodzajPrzedmiotu}}
+\index{rodzajPrzedmiotu@{rodzajPrzedmiotu}!CPoziom@{CPoziom}}
+\doxysubsubsection{\texorpdfstring{rodzajPrzedmiotu}{rodzajPrzedmiotu}}
+{\footnotesize\ttfamily int C\+Poziom\+::rodzaj\+Przedmiotu}
+
+
+
+atrybut rodzaj\+Przedmiotu okresla jaki rodzaj przedmiotu znajduje sie w treasure room 
+

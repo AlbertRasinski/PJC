@@ -1,0 +1,182 @@
+\hypertarget{class_c_boss_twins}{}\doxysection{C\+Boss\+Twins Class Reference}
+\label{class_c_boss_twins}\index{CBossTwins@{CBossTwins}}
+
+
+klasa pochodna (polimorfizm po klasie bazowej \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} ) \mbox{\hyperlink{class_c_boss_twins}{C\+Boss\+Twins}} okresla zachowanie tego typu przeciwnika  
+
+
+
+
+{\ttfamily \#include $<$C\+Boss\+Twins.\+h$>$}
+
+Inheritance diagram for C\+Boss\+Twins\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_boss_twins}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_boss_twins_af1687270f3e4e704266cf5aa1f8f91e1}{C\+Boss\+Twins}} (int x, int y)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_c_boss_twins_aef6b529ac67dfcb56621dc6f428599c0}{zachowanie\+Przeciwnika}} (int graczX, int graczY, sf\+::\+Time elapsed, std\+::vector$<$ \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} $\ast$ $>$ \&wek)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_c_boss_twins_a71f5ab7beb0350f854bc588c01b4578a}{odliczanie\+Pomiedzy\+Szarzami}}
+\begin{DoxyCompactList}\small\item\em atrybut odliczanie\+Pomiedzy\+Szarzami okresla ile pozostalo czasu do kolejnej szarzy \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_boss_twins_a5702ec72c8dd16d309feb93823db77ae}{odliczanie\+Chodzenie}}
+\begin{DoxyCompactList}\small\item\em atrybut odliczanie\+Chodzenie okresla ile pozostalo czasu do kolejnej zmiany poruszania sie \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_boss_twins_a284d0b7cb2f164d0148f8f199fd938f5}{odliczanie\+Szarza}}
+\begin{DoxyCompactList}\small\item\em atrybut odliczanie\+Szarza okresla ile pozostalo czasu do konca szarzowania \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_boss_twins_a84cac20fb70ec25bb79e823061984617}{kat\+Poruszania}}
+\begin{DoxyCompactList}\small\item\em atrybut kat\+Poruszania okresla pod jakim katem bedzie sie poruszac przeciwnik \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_boss_twins_af642d4fb3ea44b8d27cdeccaf0c7190f}{namierzenie}}
+\begin{DoxyCompactList}\small\item\em atrybut namierzenie okresla kat pod jakim boss musi sie poruszac, aby trafic w postac gracza (namierza w momencie rozpoczecia szarzownia) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const double \mbox{\hyperlink{class_c_boss_twins_afb6076f5466cf4111346c77c3ddcca61}{czas\+Pomiedzy\+Szarzami}} = 3
+\begin{DoxyCompactList}\small\item\em statyczna stala czas\+Pomiedzy\+Szarzami okresla podstawowy czas pomiedzy kolejnymi momentami gdy boss zaczyna szarzowac \end{DoxyCompactList}\item 
+static const double \mbox{\hyperlink{class_c_boss_twins_a7d70cabc0fe87356072ebb4868232566}{czas\+Chodzenie}} = 0.\+8
+\begin{DoxyCompactList}\small\item\em statyczna stala czas\+Chodzenie okresla podstawowy czas pomiedzy kolejnymi momentami zmiany kierunku poruszania sie \end{DoxyCompactList}\item 
+static const double \mbox{\hyperlink{class_c_boss_twins_ab5b6b785df438bf66a618e3e245f8b14}{czas\+Szarzy}} = 1
+\begin{DoxyCompactList}\small\item\em statyczna stala czas\+Szarzy okresla podstawowy czas trwania szarzy \end{DoxyCompactList}\item 
+static const double \mbox{\hyperlink{class_c_boss_twins_ac7879de99d420fb03d9df697f8586b22}{predkosc\+Poruszania}} = 0.\+2
+\begin{DoxyCompactList}\small\item\em statyczna stala predkosc\+Poruszania jest przydatna podczas obliczania predkosci poruszania sie \end{DoxyCompactList}\item 
+static const double \mbox{\hyperlink{class_c_boss_twins_afdd18b16a0dd1c0d76a725dd39eea440}{predkosc\+Szarzy}} = 0.\+6
+\begin{DoxyCompactList}\small\item\em statyczna stala predkosc\+Szarzy jest przydatna podczas obliczania predkosci szarzowania \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+klasa pochodna (polimorfizm po klasie bazowej \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} ) \mbox{\hyperlink{class_c_boss_twins}{C\+Boss\+Twins}} okresla zachowanie tego typu przeciwnika 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_boss_twins_af1687270f3e4e704266cf5aa1f8f91e1}\label{class_c_boss_twins_af1687270f3e4e704266cf5aa1f8f91e1}} 
+\index{CBossTwins@{CBossTwins}!CBossTwins@{CBossTwins}}
+\index{CBossTwins@{CBossTwins}!CBossTwins@{CBossTwins}}
+\doxysubsubsection{\texorpdfstring{CBossTwins()}{CBossTwins()}}
+{\footnotesize\ttfamily C\+Boss\+Twins\+::\+C\+Boss\+Twins (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\textbackslash{} konstruktor pozwala na inicjalizacje atrybutow klasy \mbox{\hyperlink{class_c_boss_twins}{C\+Boss\+Twins}} oraz atrybutow klasy bazowej 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_boss_twins_aef6b529ac67dfcb56621dc6f428599c0}\label{class_c_boss_twins_aef6b529ac67dfcb56621dc6f428599c0}} 
+\index{CBossTwins@{CBossTwins}!zachowaniePrzeciwnika@{zachowaniePrzeciwnika}}
+\index{zachowaniePrzeciwnika@{zachowaniePrzeciwnika}!CBossTwins@{CBossTwins}}
+\doxysubsubsection{\texorpdfstring{zachowaniePrzeciwnika()}{zachowaniePrzeciwnika()}}
+{\footnotesize\ttfamily void C\+Boss\+Twins\+::zachowanie\+Przeciwnika (\begin{DoxyParamCaption}\item[{int}]{graczX,  }\item[{int}]{graczY,  }\item[{sf\+::\+Time}]{elapsed,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} $\ast$ $>$ \&}]{wek }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+\textbackslash{} metoda \mbox{\hyperlink{class_c_boss_twins_aef6b529ac67dfcb56621dc6f428599c0}{zachowanie\+Przeciwnika()}} przyslania funkcje klasy \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}}, okresla jak zachowuje sie nasz przeciwnik. porusza sie planszy i co jakis czas zmienia sie kierunek, w ktorym sie porusza. Co jakis czas zaczyna szarzowac, probujac trafic w postac gracza (namierza na poczatku szarzy) i zaczyna z duza predkoscia pedzic w danym kierunku przez pewien czas. Jezeli trafi na scianke to odbija sie 
+
+Implements \mbox{\hyperlink{class_c_przeciwnik_a2a14d371aa49cd348765b7e68b29e21d}{C\+Przeciwnik}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_boss_twins_a7d70cabc0fe87356072ebb4868232566}\label{class_c_boss_twins_a7d70cabc0fe87356072ebb4868232566}} 
+\index{CBossTwins@{CBossTwins}!czasChodzenie@{czasChodzenie}}
+\index{czasChodzenie@{czasChodzenie}!CBossTwins@{CBossTwins}}
+\doxysubsubsection{\texorpdfstring{czasChodzenie}{czasChodzenie}}
+{\footnotesize\ttfamily const double C\+Boss\+Twins\+::czas\+Chodzenie = 0.\+8\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+statyczna stala czas\+Chodzenie okresla podstawowy czas pomiedzy kolejnymi momentami zmiany kierunku poruszania sie 
+
+\mbox{\Hypertarget{class_c_boss_twins_afb6076f5466cf4111346c77c3ddcca61}\label{class_c_boss_twins_afb6076f5466cf4111346c77c3ddcca61}} 
+\index{CBossTwins@{CBossTwins}!czasPomiedzySzarzami@{czasPomiedzySzarzami}}
+\index{czasPomiedzySzarzami@{czasPomiedzySzarzami}!CBossTwins@{CBossTwins}}
+\doxysubsubsection{\texorpdfstring{czasPomiedzySzarzami}{czasPomiedzySzarzami}}
+{\footnotesize\ttfamily const double C\+Boss\+Twins\+::czas\+Pomiedzy\+Szarzami = 3\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+statyczna stala czas\+Pomiedzy\+Szarzami okresla podstawowy czas pomiedzy kolejnymi momentami gdy boss zaczyna szarzowac 
+
+\mbox{\Hypertarget{class_c_boss_twins_ab5b6b785df438bf66a618e3e245f8b14}\label{class_c_boss_twins_ab5b6b785df438bf66a618e3e245f8b14}} 
+\index{CBossTwins@{CBossTwins}!czasSzarzy@{czasSzarzy}}
+\index{czasSzarzy@{czasSzarzy}!CBossTwins@{CBossTwins}}
+\doxysubsubsection{\texorpdfstring{czasSzarzy}{czasSzarzy}}
+{\footnotesize\ttfamily const double C\+Boss\+Twins\+::czas\+Szarzy = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+statyczna stala czas\+Szarzy okresla podstawowy czas trwania szarzy 
+
+\mbox{\Hypertarget{class_c_boss_twins_a84cac20fb70ec25bb79e823061984617}\label{class_c_boss_twins_a84cac20fb70ec25bb79e823061984617}} 
+\index{CBossTwins@{CBossTwins}!katPoruszania@{katPoruszania}}
+\index{katPoruszania@{katPoruszania}!CBossTwins@{CBossTwins}}
+\doxysubsubsection{\texorpdfstring{katPoruszania}{katPoruszania}}
+{\footnotesize\ttfamily int C\+Boss\+Twins\+::kat\+Poruszania\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+atrybut kat\+Poruszania okresla pod jakim katem bedzie sie poruszac przeciwnik 
+
+\mbox{\Hypertarget{class_c_boss_twins_af642d4fb3ea44b8d27cdeccaf0c7190f}\label{class_c_boss_twins_af642d4fb3ea44b8d27cdeccaf0c7190f}} 
+\index{CBossTwins@{CBossTwins}!namierzenie@{namierzenie}}
+\index{namierzenie@{namierzenie}!CBossTwins@{CBossTwins}}
+\doxysubsubsection{\texorpdfstring{namierzenie}{namierzenie}}
+{\footnotesize\ttfamily bool C\+Boss\+Twins\+::namierzenie\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+atrybut namierzenie okresla kat pod jakim boss musi sie poruszac, aby trafic w postac gracza (namierza w momencie rozpoczecia szarzownia) 
+
+\mbox{\Hypertarget{class_c_boss_twins_a5702ec72c8dd16d309feb93823db77ae}\label{class_c_boss_twins_a5702ec72c8dd16d309feb93823db77ae}} 
+\index{CBossTwins@{CBossTwins}!odliczanieChodzenie@{odliczanieChodzenie}}
+\index{odliczanieChodzenie@{odliczanieChodzenie}!CBossTwins@{CBossTwins}}
+\doxysubsubsection{\texorpdfstring{odliczanieChodzenie}{odliczanieChodzenie}}
+{\footnotesize\ttfamily double C\+Boss\+Twins\+::odliczanie\+Chodzenie\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+atrybut odliczanie\+Chodzenie okresla ile pozostalo czasu do kolejnej zmiany poruszania sie 
+
+\mbox{\Hypertarget{class_c_boss_twins_a71f5ab7beb0350f854bc588c01b4578a}\label{class_c_boss_twins_a71f5ab7beb0350f854bc588c01b4578a}} 
+\index{CBossTwins@{CBossTwins}!odliczaniePomiedzySzarzami@{odliczaniePomiedzySzarzami}}
+\index{odliczaniePomiedzySzarzami@{odliczaniePomiedzySzarzami}!CBossTwins@{CBossTwins}}
+\doxysubsubsection{\texorpdfstring{odliczaniePomiedzySzarzami}{odliczaniePomiedzySzarzami}}
+{\footnotesize\ttfamily double C\+Boss\+Twins\+::odliczanie\+Pomiedzy\+Szarzami\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+atrybut odliczanie\+Pomiedzy\+Szarzami okresla ile pozostalo czasu do kolejnej szarzy 
+
+\mbox{\Hypertarget{class_c_boss_twins_a284d0b7cb2f164d0148f8f199fd938f5}\label{class_c_boss_twins_a284d0b7cb2f164d0148f8f199fd938f5}} 
+\index{CBossTwins@{CBossTwins}!odliczanieSzarza@{odliczanieSzarza}}
+\index{odliczanieSzarza@{odliczanieSzarza}!CBossTwins@{CBossTwins}}
+\doxysubsubsection{\texorpdfstring{odliczanieSzarza}{odliczanieSzarza}}
+{\footnotesize\ttfamily double C\+Boss\+Twins\+::odliczanie\+Szarza\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+atrybut odliczanie\+Szarza okresla ile pozostalo czasu do konca szarzowania 
+
+\mbox{\Hypertarget{class_c_boss_twins_ac7879de99d420fb03d9df697f8586b22}\label{class_c_boss_twins_ac7879de99d420fb03d9df697f8586b22}} 
+\index{CBossTwins@{CBossTwins}!predkoscPoruszania@{predkoscPoruszania}}
+\index{predkoscPoruszania@{predkoscPoruszania}!CBossTwins@{CBossTwins}}
+\doxysubsubsection{\texorpdfstring{predkoscPoruszania}{predkoscPoruszania}}
+{\footnotesize\ttfamily const double C\+Boss\+Twins\+::predkosc\+Poruszania = 0.\+2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+statyczna stala predkosc\+Poruszania jest przydatna podczas obliczania predkosci poruszania sie 
+
+\mbox{\Hypertarget{class_c_boss_twins_afdd18b16a0dd1c0d76a725dd39eea440}\label{class_c_boss_twins_afdd18b16a0dd1c0d76a725dd39eea440}} 
+\index{CBossTwins@{CBossTwins}!predkoscSzarzy@{predkoscSzarzy}}
+\index{predkoscSzarzy@{predkoscSzarzy}!CBossTwins@{CBossTwins}}
+\doxysubsubsection{\texorpdfstring{predkoscSzarzy}{predkoscSzarzy}}
+{\footnotesize\ttfamily const double C\+Boss\+Twins\+::predkosc\+Szarzy = 0.\+6\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+statyczna stala predkosc\+Szarzy jest przydatna podczas obliczania predkosci szarzowania 
+

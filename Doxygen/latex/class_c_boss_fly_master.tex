@@ -1,0 +1,134 @@
+\hypertarget{class_c_boss_fly_master}{}\doxysection{C\+Boss\+Fly\+Master Class Reference}
+\label{class_c_boss_fly_master}\index{CBossFlyMaster@{CBossFlyMaster}}
+
+
+klasa pochodna (polimorfizm po klasie bazowej \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} ) \mbox{\hyperlink{class_c_boss_fly_master}{C\+Boss\+Fly\+Master}} okresla zachowanie tego typu przeciwnika  
+
+
+
+
+{\ttfamily \#include $<$C\+Boss\+Fly\+Master.\+h$>$}
+
+Inheritance diagram for C\+Boss\+Fly\+Master\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_boss_fly_master}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_boss_fly_master_ab433acbedf1243e8a7f84b2eeb11de9b}{C\+Boss\+Fly\+Master}} (int x, int y)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_c_boss_fly_master_aa0c0f0408b2f1ba8044faf5ba69e0f00}{zachowanie\+Przeciwnika}} (int graczX, int graczY, sf\+::\+Time elapsed, std\+::vector$<$ \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} $\ast$ $>$ \&wek)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_c_boss_fly_master_a00105763d0791e6501f9b144aa2dac81}{odliczanie\+Pomiedzy\+Tworzeniami}}
+\begin{DoxyCompactList}\small\item\em atrybut odliczanie\+Pomiedzy\+Tworzeniami odlicza czas jaki pozostal do kolejnego przyzwania przeciwnikow \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_boss_fly_master_ab1e7bb90f9d1fdc8744ca71548247b13}{odliczanie\+Chodzenie}}
+\begin{DoxyCompactList}\small\item\em atrybut odliczanie\+Chodzenie odlicza czas jaki pozostal do kolejnej zmiany kierunku chodzenia \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_boss_fly_master_a26148a4ae56eb8174f83f129e6fe79ae}{kat\+Poruszania}}
+\begin{DoxyCompactList}\small\item\em atrybut kat\+Poruszania okresla pod jakim katem bedzie sie poruszac przeciwnik \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const double \mbox{\hyperlink{class_c_boss_fly_master_a67703c70baaed54ec8d4f829d26059be}{czas\+Pomiedzy\+Tworzeniem}} = 3
+\begin{DoxyCompactList}\small\item\em statyczna stala czas\+Pomiedzy\+Tworzeniem okresla podstawowy czas pomiedzy kolejnymi momentami gdy boss przywoluje do zycia nowych przeciwnikow \end{DoxyCompactList}\item 
+static const double \mbox{\hyperlink{class_c_boss_fly_master_a7e3e62c292eebaebacf1f2b59ad7028c}{czas\+Chodzenie}} = 1.\+5
+\begin{DoxyCompactList}\small\item\em statyczna stala czas\+Chodzenie okresla podstawowy czas pomiedzy kolejnymi zmianami kierunku poruszania sie \end{DoxyCompactList}\item 
+static const double \mbox{\hyperlink{class_c_boss_fly_master_a05c1b98d86b5f4308ef58b3e33e58ac5}{predkosc\+Poruszania}} = 0.\+1
+\begin{DoxyCompactList}\small\item\em statyczna stala predkosc\+Poruszania okresla parametr pomagajacy okreslic predkosc poruszania sie \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+klasa pochodna (polimorfizm po klasie bazowej \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} ) \mbox{\hyperlink{class_c_boss_fly_master}{C\+Boss\+Fly\+Master}} okresla zachowanie tego typu przeciwnika 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_boss_fly_master_ab433acbedf1243e8a7f84b2eeb11de9b}\label{class_c_boss_fly_master_ab433acbedf1243e8a7f84b2eeb11de9b}} 
+\index{CBossFlyMaster@{CBossFlyMaster}!CBossFlyMaster@{CBossFlyMaster}}
+\index{CBossFlyMaster@{CBossFlyMaster}!CBossFlyMaster@{CBossFlyMaster}}
+\doxysubsubsection{\texorpdfstring{CBossFlyMaster()}{CBossFlyMaster()}}
+{\footnotesize\ttfamily C\+Boss\+Fly\+Master\+::\+C\+Boss\+Fly\+Master (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\textbackslash{} konstruktor pozwala na inicjalizacje atrybutow klasy \mbox{\hyperlink{class_c_boss_fly_master}{C\+Boss\+Fly\+Master}} oraz atrybutow klasy bazowej 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_boss_fly_master_aa0c0f0408b2f1ba8044faf5ba69e0f00}\label{class_c_boss_fly_master_aa0c0f0408b2f1ba8044faf5ba69e0f00}} 
+\index{CBossFlyMaster@{CBossFlyMaster}!zachowaniePrzeciwnika@{zachowaniePrzeciwnika}}
+\index{zachowaniePrzeciwnika@{zachowaniePrzeciwnika}!CBossFlyMaster@{CBossFlyMaster}}
+\doxysubsubsection{\texorpdfstring{zachowaniePrzeciwnika()}{zachowaniePrzeciwnika()}}
+{\footnotesize\ttfamily void C\+Boss\+Fly\+Master\+::zachowanie\+Przeciwnika (\begin{DoxyParamCaption}\item[{int}]{graczX,  }\item[{int}]{graczY,  }\item[{sf\+::\+Time}]{elapsed,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} $\ast$ $>$ \&}]{wek }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+\textbackslash{} metoda \mbox{\hyperlink{class_c_boss_fly_master_aa0c0f0408b2f1ba8044faf5ba69e0f00}{zachowanie\+Przeciwnika()}} przyslania funkcje klasy \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}}, okresla jak zachowuje sie nasz przeciwnik. co jakis czas zmienia kierunek poruszania i porusza sie zgodnie z nim (jezeli dojdzie do granicy pokoju to sie odbija) oraz co pewien czas przyzywa nowych przeciwnikow 
+
+Implements \mbox{\hyperlink{class_c_przeciwnik_a2a14d371aa49cd348765b7e68b29e21d}{C\+Przeciwnik}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_boss_fly_master_a7e3e62c292eebaebacf1f2b59ad7028c}\label{class_c_boss_fly_master_a7e3e62c292eebaebacf1f2b59ad7028c}} 
+\index{CBossFlyMaster@{CBossFlyMaster}!czasChodzenie@{czasChodzenie}}
+\index{czasChodzenie@{czasChodzenie}!CBossFlyMaster@{CBossFlyMaster}}
+\doxysubsubsection{\texorpdfstring{czasChodzenie}{czasChodzenie}}
+{\footnotesize\ttfamily const double C\+Boss\+Fly\+Master\+::czas\+Chodzenie = 1.\+5\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+statyczna stala czas\+Chodzenie okresla podstawowy czas pomiedzy kolejnymi zmianami kierunku poruszania sie 
+
+\mbox{\Hypertarget{class_c_boss_fly_master_a67703c70baaed54ec8d4f829d26059be}\label{class_c_boss_fly_master_a67703c70baaed54ec8d4f829d26059be}} 
+\index{CBossFlyMaster@{CBossFlyMaster}!czasPomiedzyTworzeniem@{czasPomiedzyTworzeniem}}
+\index{czasPomiedzyTworzeniem@{czasPomiedzyTworzeniem}!CBossFlyMaster@{CBossFlyMaster}}
+\doxysubsubsection{\texorpdfstring{czasPomiedzyTworzeniem}{czasPomiedzyTworzeniem}}
+{\footnotesize\ttfamily const double C\+Boss\+Fly\+Master\+::czas\+Pomiedzy\+Tworzeniem = 3\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+statyczna stala czas\+Pomiedzy\+Tworzeniem okresla podstawowy czas pomiedzy kolejnymi momentami gdy boss przywoluje do zycia nowych przeciwnikow 
+
+\mbox{\Hypertarget{class_c_boss_fly_master_a26148a4ae56eb8174f83f129e6fe79ae}\label{class_c_boss_fly_master_a26148a4ae56eb8174f83f129e6fe79ae}} 
+\index{CBossFlyMaster@{CBossFlyMaster}!katPoruszania@{katPoruszania}}
+\index{katPoruszania@{katPoruszania}!CBossFlyMaster@{CBossFlyMaster}}
+\doxysubsubsection{\texorpdfstring{katPoruszania}{katPoruszania}}
+{\footnotesize\ttfamily int C\+Boss\+Fly\+Master\+::kat\+Poruszania\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+atrybut kat\+Poruszania okresla pod jakim katem bedzie sie poruszac przeciwnik 
+
+\mbox{\Hypertarget{class_c_boss_fly_master_ab1e7bb90f9d1fdc8744ca71548247b13}\label{class_c_boss_fly_master_ab1e7bb90f9d1fdc8744ca71548247b13}} 
+\index{CBossFlyMaster@{CBossFlyMaster}!odliczanieChodzenie@{odliczanieChodzenie}}
+\index{odliczanieChodzenie@{odliczanieChodzenie}!CBossFlyMaster@{CBossFlyMaster}}
+\doxysubsubsection{\texorpdfstring{odliczanieChodzenie}{odliczanieChodzenie}}
+{\footnotesize\ttfamily double C\+Boss\+Fly\+Master\+::odliczanie\+Chodzenie\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+atrybut odliczanie\+Chodzenie odlicza czas jaki pozostal do kolejnej zmiany kierunku chodzenia 
+
+\mbox{\Hypertarget{class_c_boss_fly_master_a00105763d0791e6501f9b144aa2dac81}\label{class_c_boss_fly_master_a00105763d0791e6501f9b144aa2dac81}} 
+\index{CBossFlyMaster@{CBossFlyMaster}!odliczaniePomiedzyTworzeniami@{odliczaniePomiedzyTworzeniami}}
+\index{odliczaniePomiedzyTworzeniami@{odliczaniePomiedzyTworzeniami}!CBossFlyMaster@{CBossFlyMaster}}
+\doxysubsubsection{\texorpdfstring{odliczaniePomiedzyTworzeniami}{odliczaniePomiedzyTworzeniami}}
+{\footnotesize\ttfamily double C\+Boss\+Fly\+Master\+::odliczanie\+Pomiedzy\+Tworzeniami\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+atrybut odliczanie\+Pomiedzy\+Tworzeniami odlicza czas jaki pozostal do kolejnego przyzwania przeciwnikow 
+
+\mbox{\Hypertarget{class_c_boss_fly_master_a05c1b98d86b5f4308ef58b3e33e58ac5}\label{class_c_boss_fly_master_a05c1b98d86b5f4308ef58b3e33e58ac5}} 
+\index{CBossFlyMaster@{CBossFlyMaster}!predkoscPoruszania@{predkoscPoruszania}}
+\index{predkoscPoruszania@{predkoscPoruszania}!CBossFlyMaster@{CBossFlyMaster}}
+\doxysubsubsection{\texorpdfstring{predkoscPoruszania}{predkoscPoruszania}}
+{\footnotesize\ttfamily const double C\+Boss\+Fly\+Master\+::predkosc\+Poruszania = 0.\+1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+statyczna stala predkosc\+Poruszania okresla parametr pomagajacy okreslic predkosc poruszania sie 
+

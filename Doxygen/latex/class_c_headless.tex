@@ -1,0 +1,146 @@
+\hypertarget{class_c_headless}{}\doxysection{C\+Headless Class Reference}
+\label{class_c_headless}\index{CHeadless@{CHeadless}}
+
+
+klasa pochodna (polimorfizm po klasie bazowej \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} ) \mbox{\hyperlink{class_c_fly_shooting}{C\+Fly\+Shooting}} okresla zachowanie tego typu przeciwnika  
+
+
+
+
+{\ttfamily \#include $<$C\+Headless.\+h$>$}
+
+Inheritance diagram for C\+Headless\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_headless}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_headless_a51a4329c0cbfd838e38a4dce3eeab25f}{C\+Headless}} (int x, int y)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_c_headless_a1c7d4dde55eba4356028d46683104580}{zachowanie\+Przeciwnika}} (int graczX, int graczY, sf\+::\+Time elapsed, std\+::vector$<$ \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} $\ast$ $>$ \&wek)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_c_headless_a0d54da4fe96761440438e50a81cad898}{odliczanie}}
+\begin{DoxyCompactList}\small\item\em atrybut odliczanie okresla ile pozostalo czasu do kolejnego skoku \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_headless_a74427024423652004f95af3cbc2f1948}{podczas\+Skoku}}
+\begin{DoxyCompactList}\small\item\em atrybut sprawdza, czy przeciwnik nadal jest podczas wykonywania skoku \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_headless_a31ca54c517b4ce19acd52c089ab1a37e}{pozX}}
+\begin{DoxyCompactList}\small\item\em atrybut pozX pozwala zapamietac pozycje x, do ktorej skoczy przeciwnik \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_headless_a2a8057892ce5ed723dc0520d9a6395d1}{pozY}}
+\begin{DoxyCompactList}\small\item\em atrybut pozY pozwala zapamietac pozycje y, do ktorej skoczy przeciwnik \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const double \mbox{\hyperlink{class_c_headless_a7cd6b1d3687b639f96b8b5e33347a812}{czas\+Pomiedzy\+Skokami}} = 1
+\begin{DoxyCompactList}\small\item\em statyczna stala czas\+Pomiedzy\+Skokami okresla podstawowy czas pomiedzy kolejnymi momentami gdy przeciwnik skacze \end{DoxyCompactList}\item 
+static const double \mbox{\hyperlink{class_c_headless_a909b319f8f5b5936998a1c3f2c1fc1ad}{predkosc}} = 0.\+5
+\begin{DoxyCompactList}\small\item\em statyczna stala predkosc jest pomocna do obliczenia predkosci przeciwnika \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{class_c_headless_a0ff3c097aa787ebf9b9fa97fd92e3227}{zasieg}} = 400
+\begin{DoxyCompactList}\small\item\em statyczna stala zasieg okresla jak daleko moze skoczyc przeciwnik \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+klasa pochodna (polimorfizm po klasie bazowej \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} ) \mbox{\hyperlink{class_c_fly_shooting}{C\+Fly\+Shooting}} okresla zachowanie tego typu przeciwnika 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_headless_a51a4329c0cbfd838e38a4dce3eeab25f}\label{class_c_headless_a51a4329c0cbfd838e38a4dce3eeab25f}} 
+\index{CHeadless@{CHeadless}!CHeadless@{CHeadless}}
+\index{CHeadless@{CHeadless}!CHeadless@{CHeadless}}
+\doxysubsubsection{\texorpdfstring{CHeadless()}{CHeadless()}}
+{\footnotesize\ttfamily C\+Headless\+::\+C\+Headless (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\textbackslash{} konstruktor pozwala na inicjalizacje atrybutow klasy \mbox{\hyperlink{class_c_headless}{C\+Headless}} oraz atrybutow klasy bazowej 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_headless_a1c7d4dde55eba4356028d46683104580}\label{class_c_headless_a1c7d4dde55eba4356028d46683104580}} 
+\index{CHeadless@{CHeadless}!zachowaniePrzeciwnika@{zachowaniePrzeciwnika}}
+\index{zachowaniePrzeciwnika@{zachowaniePrzeciwnika}!CHeadless@{CHeadless}}
+\doxysubsubsection{\texorpdfstring{zachowaniePrzeciwnika()}{zachowaniePrzeciwnika()}}
+{\footnotesize\ttfamily void C\+Headless\+::zachowanie\+Przeciwnika (\begin{DoxyParamCaption}\item[{int}]{graczX,  }\item[{int}]{graczY,  }\item[{sf\+::\+Time}]{elapsed,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} $\ast$ $>$ \&}]{wek }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+\textbackslash{} metoda \mbox{\hyperlink{class_c_headless_a1c7d4dde55eba4356028d46683104580}{zachowanie\+Przeciwnika()}} przyslania funkcje klasy \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}}, okresla jak zachowuje sie nasz przeciwnik. Przeciwnik zazwyczaj stoi, lecz gdy minie pewien przedzial czasu wyskoczy on i bedzie zmierzal do konkretnego punktu. Jak dojdzie do konkretnego punktu znowu czeka na kolejny skok 
+
+Implements \mbox{\hyperlink{class_c_przeciwnik_a2a14d371aa49cd348765b7e68b29e21d}{C\+Przeciwnik}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_headless_a7cd6b1d3687b639f96b8b5e33347a812}\label{class_c_headless_a7cd6b1d3687b639f96b8b5e33347a812}} 
+\index{CHeadless@{CHeadless}!czasPomiedzySkokami@{czasPomiedzySkokami}}
+\index{czasPomiedzySkokami@{czasPomiedzySkokami}!CHeadless@{CHeadless}}
+\doxysubsubsection{\texorpdfstring{czasPomiedzySkokami}{czasPomiedzySkokami}}
+{\footnotesize\ttfamily const double C\+Headless\+::czas\+Pomiedzy\+Skokami = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+statyczna stala czas\+Pomiedzy\+Skokami okresla podstawowy czas pomiedzy kolejnymi momentami gdy przeciwnik skacze 
+
+\mbox{\Hypertarget{class_c_headless_a0d54da4fe96761440438e50a81cad898}\label{class_c_headless_a0d54da4fe96761440438e50a81cad898}} 
+\index{CHeadless@{CHeadless}!odliczanie@{odliczanie}}
+\index{odliczanie@{odliczanie}!CHeadless@{CHeadless}}
+\doxysubsubsection{\texorpdfstring{odliczanie}{odliczanie}}
+{\footnotesize\ttfamily double C\+Headless\+::odliczanie\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+atrybut odliczanie okresla ile pozostalo czasu do kolejnego skoku 
+
+\mbox{\Hypertarget{class_c_headless_a74427024423652004f95af3cbc2f1948}\label{class_c_headless_a74427024423652004f95af3cbc2f1948}} 
+\index{CHeadless@{CHeadless}!podczasSkoku@{podczasSkoku}}
+\index{podczasSkoku@{podczasSkoku}!CHeadless@{CHeadless}}
+\doxysubsubsection{\texorpdfstring{podczasSkoku}{podczasSkoku}}
+{\footnotesize\ttfamily bool C\+Headless\+::podczas\+Skoku\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+atrybut sprawdza, czy przeciwnik nadal jest podczas wykonywania skoku 
+
+\mbox{\Hypertarget{class_c_headless_a31ca54c517b4ce19acd52c089ab1a37e}\label{class_c_headless_a31ca54c517b4ce19acd52c089ab1a37e}} 
+\index{CHeadless@{CHeadless}!pozX@{pozX}}
+\index{pozX@{pozX}!CHeadless@{CHeadless}}
+\doxysubsubsection{\texorpdfstring{pozX}{pozX}}
+{\footnotesize\ttfamily int C\+Headless\+::pozX\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+atrybut pozX pozwala zapamietac pozycje x, do ktorej skoczy przeciwnik 
+
+\mbox{\Hypertarget{class_c_headless_a2a8057892ce5ed723dc0520d9a6395d1}\label{class_c_headless_a2a8057892ce5ed723dc0520d9a6395d1}} 
+\index{CHeadless@{CHeadless}!pozY@{pozY}}
+\index{pozY@{pozY}!CHeadless@{CHeadless}}
+\doxysubsubsection{\texorpdfstring{pozY}{pozY}}
+{\footnotesize\ttfamily int C\+Headless\+::pozY\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+atrybut pozY pozwala zapamietac pozycje y, do ktorej skoczy przeciwnik 
+
+\mbox{\Hypertarget{class_c_headless_a909b319f8f5b5936998a1c3f2c1fc1ad}\label{class_c_headless_a909b319f8f5b5936998a1c3f2c1fc1ad}} 
+\index{CHeadless@{CHeadless}!predkosc@{predkosc}}
+\index{predkosc@{predkosc}!CHeadless@{CHeadless}}
+\doxysubsubsection{\texorpdfstring{predkosc}{predkosc}}
+{\footnotesize\ttfamily const double C\+Headless\+::predkosc = 0.\+5\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+statyczna stala predkosc jest pomocna do obliczenia predkosci przeciwnika 
+
+\mbox{\Hypertarget{class_c_headless_a0ff3c097aa787ebf9b9fa97fd92e3227}\label{class_c_headless_a0ff3c097aa787ebf9b9fa97fd92e3227}} 
+\index{CHeadless@{CHeadless}!zasieg@{zasieg}}
+\index{zasieg@{zasieg}!CHeadless@{CHeadless}}
+\doxysubsubsection{\texorpdfstring{zasieg}{zasieg}}
+{\footnotesize\ttfamily const int C\+Headless\+::zasieg = 400\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+statyczna stala zasieg okresla jak daleko moze skoczyc przeciwnik 
+

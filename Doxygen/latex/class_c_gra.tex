@@ -1,0 +1,250 @@
+\hypertarget{class_c_gra}{}\doxysection{C\+Gra Class Reference}
+\label{class_c_gra}\index{CGra@{CGra}}
+
+
+klasa \mbox{\hyperlink{class_c_gra}{C\+Gra}} laczy ze soba pozostale klasy ( \mbox{\hyperlink{class_c_postac_gracza}{C\+Postac\+Gracza}} \mbox{\hyperlink{class_c_poziom}{C\+Poziom}} \mbox{\hyperlink{class_c_pociski}{C\+Pociski}} ) i wspolnie tworza obiekt, ktory oblicza przebieg gry  
+
+
+
+
+{\ttfamily \#include $<$C\+Gra.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_gra_a11d1d708996baf972b297b1b48a0d478}{dzialanie}} ()
+\begin{DoxyCompactList}\small\item\em metoda \mbox{\hyperlink{class_c_gra_a11d1d708996baf972b297b1b48a0d478}{dzialanie()}} laczy w sobie wszystkie obliczenia potrzebne do dzialania gry \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_gra_aa2d22c245d53565218c27a5a705d5ff1}{zapisz}} ()
+\begin{DoxyCompactList}\small\item\em metoda \mbox{\hyperlink{class_c_gra_aa2d22c245d53565218c27a5a705d5ff1}{zapisz()}} powoduje zapisanie postepu stanu gry \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_gra_a25986d2a81c24d2c1b3bb14e50c36393}{wczytaj}} ()
+\begin{DoxyCompactList}\small\item\em metoda \mbox{\hyperlink{class_c_gra_a25986d2a81c24d2c1b3bb14e50c36393}{wczytaj()}} powoduje wczytanie postepu stanu gry \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_gra_a0c099fc9965afa3baaef43627bda37f7}{C\+Gra}} ()
+\begin{DoxyCompactList}\small\item\em konstrukto \mbox{\hyperlink{class_c_gra_a0c099fc9965afa3baaef43627bda37f7}{C\+Gra()}} inicjalizuje atrybuty oraz generuje i wczytuje poziomy \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_gra_a4703c737d54b4c0e267d7574fdf6652c}{$\sim$\+C\+Gra}} ()
+\begin{DoxyCompactList}\small\item\em destruktor zapisuje stan gry, przy wylaczeniu gry \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Clock \mbox{\hyperlink{class_c_gra_a66c0b2644da3f5e1ad9e4337968d6cf2}{clock}}
+\begin{DoxyCompactList}\small\item\em atrybut clock, ktory pozwala na pobranie czasu \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_c_pociski}{C\+Pociski}} $>$ \mbox{\hyperlink{class_c_gra_a8df95161645252cc1a0b7c60469a2deb}{lezki}}
+\begin{DoxyCompactList}\small\item\em wektor \mbox{\hyperlink{class_c_pociski}{C\+Pociski}} lezki (kompozycja) i przechowuje informacje o lezkach wystrzelonych przez postac gracza \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_postac_gracza}{C\+Postac\+Gracza}} \mbox{\hyperlink{class_c_gra_a16c1836d8e1dddb45bf8c69c03209166}{postac}}
+\begin{DoxyCompactList}\small\item\em atrybut \mbox{\hyperlink{class_c_postac_gracza}{C\+Postac\+Gracza}} postac (kompozycja), obiekt ktorym steruje postac \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_poziom}{C\+Poziom}} \mbox{\hyperlink{class_c_gra_a1e104a807f6afd09e76976ec2338c063}{poziom}}
+\begin{DoxyCompactList}\small\item\em atrybut \mbox{\hyperlink{class_c_poziom}{C\+Poziom}} poziom (kompozycja), obiekt po ktorym mozemy sie poruszac \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_gra_ac7d706395e9b217792e78474344969eb}{poruszanie\+Kolizja\+Postaci}} ()
+\begin{DoxyCompactList}\small\item\em metoda poruszanie\+Kolizja\+Postaci(\+C\+Sterowanie klaw), ktora laczy ze soba metody klasy \mbox{\hyperlink{class_c_postac_gracza}{C\+Postac\+Gracza}} \+: poruszanie\+Postaci() oraz granice\+Pokoju() oraz sprawdza czy gracz nie przechodzi do nowego pokoju oraz czy na jego drodze nie znajduje sie element otoczenia blokujacy jego ruch \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_gra_abb34a5d3d7f8f871a46d70642b19ec4f}{wystrzel}} ()
+\begin{DoxyCompactList}\small\item\em metoda wystrzel(\+C\+Sterowanie klaw) umozliwia na wystrzelenie pocisku (tworzymy nowy element w wektorze lezki) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_gra_aa19c2ebed9d23dd21c707b4020198f96}{poruszanie\+Lezki}} ()
+\begin{DoxyCompactList}\small\item\em metoda \mbox{\hyperlink{class_c_gra_aa19c2ebed9d23dd21c707b4020198f96}{poruszanie\+Lezki()}} sprawdza czy\+: najstarsza lezka nie przekroczyla maksymalnego zasiegu, sprawdza czy pocisk nie trafil na granice pokoju, sprawdza czy pocisk nie trafil na element otoczenie lub czy pocisk nie trafil na przeciwnika. Lezki te sa usuwane, a w przypadku trafienia przeciwnika zadawane sa mu obrazenia \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_gra_a33a7e93eff39bedb33d99ebb1330820f}{wygrana}} ()
+\item 
+void \mbox{\hyperlink{class_c_gra_a6b12d403ce03127a4392b308595eeee1}{podniesienie\+Przedmiotu}} ()
+\begin{DoxyCompactList}\small\item\em metoda \mbox{\hyperlink{class_c_gra_a6b12d403ce03127a4392b308595eeee1}{podniesienie\+Przedmiotu()}} sprawdza czy gracz jest w pokoju treasure oraz sprawdza czy gracz podniosl przedmiot \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Time \mbox{\hyperlink{class_c_gra_ad065cd7a8ae10eb30e0ab252f06bc3df}{elapsed}}
+\begin{DoxyCompactList}\small\item\em atrybut elapsed umozliwia na obliczenie jaki czas przeminal od poprzedniego kroku obliczen \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_sterowanie}{C\+Sterowanie}} \mbox{\hyperlink{class_c_gra_a2a0656f97c769fb688d774e95c4e7816}{klaw}}
+\begin{DoxyCompactList}\small\item\em atrybut \mbox{\hyperlink{class_c_sterowanie}{C\+Sterowanie}} (kompozycja), obiekt, ktory umozliwia sterowanie klawiatura \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_gra_a6807d81c83e5461f7a308d8472fda850}{czas\+Pomiedzy\+Lezkami}}
+\begin{DoxyCompactList}\small\item\em atrybut czas\+Pomiedzy\+Lezkami, ktory pozwala na zmierzenie ile pozostalo czasu do mozliwosci wystrzelenia kolejnego pocisku \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const double \mbox{\hyperlink{class_c_gra_a0496034a60e04262e3054d038e954a74}{stala\+Predkosc\+Pociskow}} = 0.\+12
+\begin{DoxyCompactList}\small\item\em statyczna stala stala\+Predkosc\+Pociskow sluzy do odliczenia z jaka predkoscia poruszaja sie pociski gracza \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+klasa \mbox{\hyperlink{class_c_gra}{C\+Gra}} laczy ze soba pozostale klasy ( \mbox{\hyperlink{class_c_postac_gracza}{C\+Postac\+Gracza}} \mbox{\hyperlink{class_c_poziom}{C\+Poziom}} \mbox{\hyperlink{class_c_pociski}{C\+Pociski}} ) i wspolnie tworza obiekt, ktory oblicza przebieg gry 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_gra_a0c099fc9965afa3baaef43627bda37f7}\label{class_c_gra_a0c099fc9965afa3baaef43627bda37f7}} 
+\index{CGra@{CGra}!CGra@{CGra}}
+\index{CGra@{CGra}!CGra@{CGra}}
+\doxysubsubsection{\texorpdfstring{CGra()}{CGra()}}
+{\footnotesize\ttfamily C\+Gra\+::\+C\+Gra (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+konstrukto \mbox{\hyperlink{class_c_gra_a0c099fc9965afa3baaef43627bda37f7}{C\+Gra()}} inicjalizuje atrybuty oraz generuje i wczytuje poziomy 
+
+\mbox{\Hypertarget{class_c_gra_a4703c737d54b4c0e267d7574fdf6652c}\label{class_c_gra_a4703c737d54b4c0e267d7574fdf6652c}} 
+\index{CGra@{CGra}!````~CGra@{$\sim$CGra}}
+\index{````~CGra@{$\sim$CGra}!CGra@{CGra}}
+\doxysubsubsection{\texorpdfstring{$\sim$CGra()}{~CGra()}}
+{\footnotesize\ttfamily C\+Gra\+::$\sim$\+C\+Gra (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destruktor zapisuje stan gry, przy wylaczeniu gry 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_gra_a11d1d708996baf972b297b1b48a0d478}\label{class_c_gra_a11d1d708996baf972b297b1b48a0d478}} 
+\index{CGra@{CGra}!dzialanie@{dzialanie}}
+\index{dzialanie@{dzialanie}!CGra@{CGra}}
+\doxysubsubsection{\texorpdfstring{dzialanie()}{dzialanie()}}
+{\footnotesize\ttfamily void C\+Gra\+::dzialanie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+metoda \mbox{\hyperlink{class_c_gra_a11d1d708996baf972b297b1b48a0d478}{dzialanie()}} laczy w sobie wszystkie obliczenia potrzebne do dzialania gry 
+
+\mbox{\Hypertarget{class_c_gra_a6b12d403ce03127a4392b308595eeee1}\label{class_c_gra_a6b12d403ce03127a4392b308595eeee1}} 
+\index{CGra@{CGra}!podniesieniePrzedmiotu@{podniesieniePrzedmiotu}}
+\index{podniesieniePrzedmiotu@{podniesieniePrzedmiotu}!CGra@{CGra}}
+\doxysubsubsection{\texorpdfstring{podniesieniePrzedmiotu()}{podniesieniePrzedmiotu()}}
+{\footnotesize\ttfamily void C\+Gra\+::podniesienie\+Przedmiotu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+metoda \mbox{\hyperlink{class_c_gra_a6b12d403ce03127a4392b308595eeee1}{podniesienie\+Przedmiotu()}} sprawdza czy gracz jest w pokoju treasure oraz sprawdza czy gracz podniosl przedmiot 
+
+\mbox{\Hypertarget{class_c_gra_ac7d706395e9b217792e78474344969eb}\label{class_c_gra_ac7d706395e9b217792e78474344969eb}} 
+\index{CGra@{CGra}!poruszanieKolizjaPostaci@{poruszanieKolizjaPostaci}}
+\index{poruszanieKolizjaPostaci@{poruszanieKolizjaPostaci}!CGra@{CGra}}
+\doxysubsubsection{\texorpdfstring{poruszanieKolizjaPostaci()}{poruszanieKolizjaPostaci()}}
+{\footnotesize\ttfamily void C\+Gra\+::poruszanie\+Kolizja\+Postaci (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+metoda poruszanie\+Kolizja\+Postaci(\+C\+Sterowanie klaw), ktora laczy ze soba metody klasy \mbox{\hyperlink{class_c_postac_gracza}{C\+Postac\+Gracza}} \+: poruszanie\+Postaci() oraz granice\+Pokoju() oraz sprawdza czy gracz nie przechodzi do nowego pokoju oraz czy na jego drodze nie znajduje sie element otoczenia blokujacy jego ruch 
+
+\mbox{\Hypertarget{class_c_gra_aa19c2ebed9d23dd21c707b4020198f96}\label{class_c_gra_aa19c2ebed9d23dd21c707b4020198f96}} 
+\index{CGra@{CGra}!poruszanieLezki@{poruszanieLezki}}
+\index{poruszanieLezki@{poruszanieLezki}!CGra@{CGra}}
+\doxysubsubsection{\texorpdfstring{poruszanieLezki()}{poruszanieLezki()}}
+{\footnotesize\ttfamily void C\+Gra\+::poruszanie\+Lezki (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+metoda \mbox{\hyperlink{class_c_gra_aa19c2ebed9d23dd21c707b4020198f96}{poruszanie\+Lezki()}} sprawdza czy\+: najstarsza lezka nie przekroczyla maksymalnego zasiegu, sprawdza czy pocisk nie trafil na granice pokoju, sprawdza czy pocisk nie trafil na element otoczenie lub czy pocisk nie trafil na przeciwnika. Lezki te sa usuwane, a w przypadku trafienia przeciwnika zadawane sa mu obrazenia 
+
+\mbox{\Hypertarget{class_c_gra_a25986d2a81c24d2c1b3bb14e50c36393}\label{class_c_gra_a25986d2a81c24d2c1b3bb14e50c36393}} 
+\index{CGra@{CGra}!wczytaj@{wczytaj}}
+\index{wczytaj@{wczytaj}!CGra@{CGra}}
+\doxysubsubsection{\texorpdfstring{wczytaj()}{wczytaj()}}
+{\footnotesize\ttfamily void C\+Gra\+::wczytaj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+metoda \mbox{\hyperlink{class_c_gra_a25986d2a81c24d2c1b3bb14e50c36393}{wczytaj()}} powoduje wczytanie postepu stanu gry 
+
+\mbox{\Hypertarget{class_c_gra_a33a7e93eff39bedb33d99ebb1330820f}\label{class_c_gra_a33a7e93eff39bedb33d99ebb1330820f}} 
+\index{CGra@{CGra}!wygrana@{wygrana}}
+\index{wygrana@{wygrana}!CGra@{CGra}}
+\doxysubsubsection{\texorpdfstring{wygrana()}{wygrana()}}
+{\footnotesize\ttfamily void C\+Gra\+::wygrana (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\textbackslash{}briefmetoda \mbox{\hyperlink{class_c_gra_a33a7e93eff39bedb33d99ebb1330820f}{wygrana()}} sprawdza czy w danym pokoju, w ktorym jest boss, ten zostal pokonany, jesli tak to umozliwia to nam przejscie do kolejnego poziomu (przejscie postaci do odpowiedniego punktu w pokoju) \mbox{\Hypertarget{class_c_gra_abb34a5d3d7f8f871a46d70642b19ec4f}\label{class_c_gra_abb34a5d3d7f8f871a46d70642b19ec4f}} 
+\index{CGra@{CGra}!wystrzel@{wystrzel}}
+\index{wystrzel@{wystrzel}!CGra@{CGra}}
+\doxysubsubsection{\texorpdfstring{wystrzel()}{wystrzel()}}
+{\footnotesize\ttfamily void C\+Gra\+::wystrzel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+metoda wystrzel(\+C\+Sterowanie klaw) umozliwia na wystrzelenie pocisku (tworzymy nowy element w wektorze lezki) 
+
+\mbox{\Hypertarget{class_c_gra_aa2d22c245d53565218c27a5a705d5ff1}\label{class_c_gra_aa2d22c245d53565218c27a5a705d5ff1}} 
+\index{CGra@{CGra}!zapisz@{zapisz}}
+\index{zapisz@{zapisz}!CGra@{CGra}}
+\doxysubsubsection{\texorpdfstring{zapisz()}{zapisz()}}
+{\footnotesize\ttfamily void C\+Gra\+::zapisz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+metoda \mbox{\hyperlink{class_c_gra_aa2d22c245d53565218c27a5a705d5ff1}{zapisz()}} powoduje zapisanie postepu stanu gry 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_gra_a66c0b2644da3f5e1ad9e4337968d6cf2}\label{class_c_gra_a66c0b2644da3f5e1ad9e4337968d6cf2}} 
+\index{CGra@{CGra}!clock@{clock}}
+\index{clock@{clock}!CGra@{CGra}}
+\doxysubsubsection{\texorpdfstring{clock}{clock}}
+{\footnotesize\ttfamily sf\+::\+Clock C\+Gra\+::clock}
+
+
+
+atrybut clock, ktory pozwala na pobranie czasu 
+
+\mbox{\Hypertarget{class_c_gra_a6807d81c83e5461f7a308d8472fda850}\label{class_c_gra_a6807d81c83e5461f7a308d8472fda850}} 
+\index{CGra@{CGra}!czasPomiedzyLezkami@{czasPomiedzyLezkami}}
+\index{czasPomiedzyLezkami@{czasPomiedzyLezkami}!CGra@{CGra}}
+\doxysubsubsection{\texorpdfstring{czasPomiedzyLezkami}{czasPomiedzyLezkami}}
+{\footnotesize\ttfamily double C\+Gra\+::czas\+Pomiedzy\+Lezkami\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+atrybut czas\+Pomiedzy\+Lezkami, ktory pozwala na zmierzenie ile pozostalo czasu do mozliwosci wystrzelenia kolejnego pocisku 
+
+\mbox{\Hypertarget{class_c_gra_ad065cd7a8ae10eb30e0ab252f06bc3df}\label{class_c_gra_ad065cd7a8ae10eb30e0ab252f06bc3df}} 
+\index{CGra@{CGra}!elapsed@{elapsed}}
+\index{elapsed@{elapsed}!CGra@{CGra}}
+\doxysubsubsection{\texorpdfstring{elapsed}{elapsed}}
+{\footnotesize\ttfamily sf\+::\+Time C\+Gra\+::elapsed\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+atrybut elapsed umozliwia na obliczenie jaki czas przeminal od poprzedniego kroku obliczen 
+
+\mbox{\Hypertarget{class_c_gra_a2a0656f97c769fb688d774e95c4e7816}\label{class_c_gra_a2a0656f97c769fb688d774e95c4e7816}} 
+\index{CGra@{CGra}!klaw@{klaw}}
+\index{klaw@{klaw}!CGra@{CGra}}
+\doxysubsubsection{\texorpdfstring{klaw}{klaw}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_sterowanie}{C\+Sterowanie}} C\+Gra\+::klaw\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+atrybut \mbox{\hyperlink{class_c_sterowanie}{C\+Sterowanie}} (kompozycja), obiekt, ktory umozliwia sterowanie klawiatura 
+
+\mbox{\Hypertarget{class_c_gra_a8df95161645252cc1a0b7c60469a2deb}\label{class_c_gra_a8df95161645252cc1a0b7c60469a2deb}} 
+\index{CGra@{CGra}!lezki@{lezki}}
+\index{lezki@{lezki}!CGra@{CGra}}
+\doxysubsubsection{\texorpdfstring{lezki}{lezki}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_c_pociski}{C\+Pociski}}$>$ C\+Gra\+::lezki}
+
+
+
+wektor \mbox{\hyperlink{class_c_pociski}{C\+Pociski}} lezki (kompozycja) i przechowuje informacje o lezkach wystrzelonych przez postac gracza 
+
+\mbox{\Hypertarget{class_c_gra_a16c1836d8e1dddb45bf8c69c03209166}\label{class_c_gra_a16c1836d8e1dddb45bf8c69c03209166}} 
+\index{CGra@{CGra}!postac@{postac}}
+\index{postac@{postac}!CGra@{CGra}}
+\doxysubsubsection{\texorpdfstring{postac}{postac}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_postac_gracza}{C\+Postac\+Gracza}} C\+Gra\+::postac}
+
+
+
+atrybut \mbox{\hyperlink{class_c_postac_gracza}{C\+Postac\+Gracza}} postac (kompozycja), obiekt ktorym steruje postac 
+
+\mbox{\Hypertarget{class_c_gra_a1e104a807f6afd09e76976ec2338c063}\label{class_c_gra_a1e104a807f6afd09e76976ec2338c063}} 
+\index{CGra@{CGra}!poziom@{poziom}}
+\index{poziom@{poziom}!CGra@{CGra}}
+\doxysubsubsection{\texorpdfstring{poziom}{poziom}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_poziom}{C\+Poziom}} C\+Gra\+::poziom}
+
+
+
+atrybut \mbox{\hyperlink{class_c_poziom}{C\+Poziom}} poziom (kompozycja), obiekt po ktorym mozemy sie poruszac 
+
+\mbox{\Hypertarget{class_c_gra_a0496034a60e04262e3054d038e954a74}\label{class_c_gra_a0496034a60e04262e3054d038e954a74}} 
+\index{CGra@{CGra}!stalaPredkoscPociskow@{stalaPredkoscPociskow}}
+\index{stalaPredkoscPociskow@{stalaPredkoscPociskow}!CGra@{CGra}}
+\doxysubsubsection{\texorpdfstring{stalaPredkoscPociskow}{stalaPredkoscPociskow}}
+{\footnotesize\ttfamily const double C\+Gra\+::stala\+Predkosc\+Pociskow = 0.\+12\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+statyczna stala stala\+Predkosc\+Pociskow sluzy do odliczenia z jaka predkoscia poruszaja sie pociski gracza 
+

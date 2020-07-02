@@ -1,0 +1,98 @@
+\hypertarget{class_c_turret}{}\doxysection{C\+Turret Class Reference}
+\label{class_c_turret}\index{CTurret@{CTurret}}
+
+
+klasa pochodna (polimorfizm po klasie bazowej \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} ) \mbox{\hyperlink{class_c_turret}{C\+Turret}} okresla zachowanie tego typu przeciwnika  
+
+
+
+
+{\ttfamily \#include $<$C\+Turret.\+h$>$}
+
+Inheritance diagram for C\+Turret\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_turret}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_turret_aa129c25b7d120c7434e5e14337c52fd4}{C\+Turret}} (int x, int y)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_c_turret_a96954796adb76aa0969c1baae011e9d8}{zachowanie\+Przeciwnika}} (int graczX, int graczY, sf\+::\+Time elapsed, std\+::vector$<$ \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} $\ast$ $>$ \&wek)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_c_turret_a0efa44da54666933057bceba926171f8}{odliczanie}}
+\begin{DoxyCompactList}\small\item\em atrybut odliczanie okresla ile pozostalo czasu do kolejnego wystrzelenia \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const double \mbox{\hyperlink{class_c_turret_abb692f4d28e27977f60d92f16b0d1b64}{czas\+Pomiedzy\+Strzalami}} = 1.\+3
+\begin{DoxyCompactList}\small\item\em statyczna stala czas\+Pomiedzy\+Strzalami okresla podstawowy czas pomiedzy kolejnymi momentami gdy przeciwnik strzela \end{DoxyCompactList}\item 
+static const double \mbox{\hyperlink{class_c_turret_a9200bab3b1b5f91df5d1d13a6f57a1db}{predkosc\+Lezki\+Przeciwnika}} = 0.\+6
+\begin{DoxyCompactList}\small\item\em statyczna stala predkosc\+Lezki\+Przeciwnika jest przydatna podczas obliczania predkosci poruszania sie pociskow przeciwnika \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+klasa pochodna (polimorfizm po klasie bazowej \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} ) \mbox{\hyperlink{class_c_turret}{C\+Turret}} okresla zachowanie tego typu przeciwnika 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_turret_aa129c25b7d120c7434e5e14337c52fd4}\label{class_c_turret_aa129c25b7d120c7434e5e14337c52fd4}} 
+\index{CTurret@{CTurret}!CTurret@{CTurret}}
+\index{CTurret@{CTurret}!CTurret@{CTurret}}
+\doxysubsubsection{\texorpdfstring{CTurret()}{CTurret()}}
+{\footnotesize\ttfamily C\+Turret\+::\+C\+Turret (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\textbackslash{} konstruktor pozwala na inicjalizacje atrybutow klasy \mbox{\hyperlink{class_c_fly_shooting}{C\+Fly\+Shooting}} oraz atrybutow klasy bazowej 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_turret_a96954796adb76aa0969c1baae011e9d8}\label{class_c_turret_a96954796adb76aa0969c1baae011e9d8}} 
+\index{CTurret@{CTurret}!zachowaniePrzeciwnika@{zachowaniePrzeciwnika}}
+\index{zachowaniePrzeciwnika@{zachowaniePrzeciwnika}!CTurret@{CTurret}}
+\doxysubsubsection{\texorpdfstring{zachowaniePrzeciwnika()}{zachowaniePrzeciwnika()}}
+{\footnotesize\ttfamily void C\+Turret\+::zachowanie\+Przeciwnika (\begin{DoxyParamCaption}\item[{int}]{graczX,  }\item[{int}]{graczY,  }\item[{sf\+::\+Time}]{elapsed,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} $\ast$ $>$ \&}]{wek }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+\textbackslash{} metoda \mbox{\hyperlink{class_c_turret_a96954796adb76aa0969c1baae011e9d8}{zachowanie\+Przeciwnika()}} przyslania funkcje klasy \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}}, okresla jak zachowuje sie nasz przeciwnik. Przeciwnik nie porusza sie, co pewien czas strzela pocisk w kierunku postaci gracza 
+
+Implements \mbox{\hyperlink{class_c_przeciwnik_a2a14d371aa49cd348765b7e68b29e21d}{C\+Przeciwnik}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_turret_abb692f4d28e27977f60d92f16b0d1b64}\label{class_c_turret_abb692f4d28e27977f60d92f16b0d1b64}} 
+\index{CTurret@{CTurret}!czasPomiedzyStrzalami@{czasPomiedzyStrzalami}}
+\index{czasPomiedzyStrzalami@{czasPomiedzyStrzalami}!CTurret@{CTurret}}
+\doxysubsubsection{\texorpdfstring{czasPomiedzyStrzalami}{czasPomiedzyStrzalami}}
+{\footnotesize\ttfamily const double C\+Turret\+::czas\+Pomiedzy\+Strzalami = 1.\+3\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+statyczna stala czas\+Pomiedzy\+Strzalami okresla podstawowy czas pomiedzy kolejnymi momentami gdy przeciwnik strzela 
+
+\mbox{\Hypertarget{class_c_turret_a0efa44da54666933057bceba926171f8}\label{class_c_turret_a0efa44da54666933057bceba926171f8}} 
+\index{CTurret@{CTurret}!odliczanie@{odliczanie}}
+\index{odliczanie@{odliczanie}!CTurret@{CTurret}}
+\doxysubsubsection{\texorpdfstring{odliczanie}{odliczanie}}
+{\footnotesize\ttfamily double C\+Turret\+::odliczanie\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+atrybut odliczanie okresla ile pozostalo czasu do kolejnego wystrzelenia 
+
+\mbox{\Hypertarget{class_c_turret_a9200bab3b1b5f91df5d1d13a6f57a1db}\label{class_c_turret_a9200bab3b1b5f91df5d1d13a6f57a1db}} 
+\index{CTurret@{CTurret}!predkoscLezkiPrzeciwnika@{predkoscLezkiPrzeciwnika}}
+\index{predkoscLezkiPrzeciwnika@{predkoscLezkiPrzeciwnika}!CTurret@{CTurret}}
+\doxysubsubsection{\texorpdfstring{predkoscLezkiPrzeciwnika}{predkoscLezkiPrzeciwnika}}
+{\footnotesize\ttfamily const double C\+Turret\+::predkosc\+Lezki\+Przeciwnika = 0.\+6\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+statyczna stala predkosc\+Lezki\+Przeciwnika jest przydatna podczas obliczania predkosci poruszania sie pociskow przeciwnika 
+

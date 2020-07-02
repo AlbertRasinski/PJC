@@ -1,0 +1,134 @@
+\hypertarget{class_c_pokoj}{}\doxysection{C\+Pokoj Class Reference}
+\label{class_c_pokoj}\index{CPokoj@{CPokoj}}
+
+
+klasa \mbox{\hyperlink{class_c_pokoj}{C\+Pokoj}} okresla parametry pokoju (poziom sklada sie z pokoi)  
+
+
+
+
+{\ttfamily \#include $<$C\+Pokoj.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_pokoj_a6e1b28374526fc44888f29813a5e8649}{C\+Pokoj}} ()
+\begin{DoxyCompactList}\small\item\em konstruktor klasy \mbox{\hyperlink{class_c_pokoj}{C\+Pokoj}}, ktory inicjalizuje atrybuty obiektu \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_pokoj_a78938d1b9d00ac1dcc9cb0ccadba8f75}{$\sim$\+C\+Pokoj}} ()
+\begin{DoxyCompactList}\small\item\em detruktor klasy $\sim$\+C\+Pokoj, ktory sprzata po sobie wskazniki w wektorze przeciwnicy \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_c_pokoj_a4fa04fcaa4ba1807fb5761c6aaf2aca5}{obecnosc}}
+\begin{DoxyCompactList}\small\item\em obecnosc okresla, czy dany pokoj istnieje (czy na planszy poziomu, w danym miejscu jest jakis pokoj) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_pokoj_aabb7364086784acdec126798510d26d0}{odkryty}}
+\begin{DoxyCompactList}\small\item\em odkryty okresla, czy postac gracza znajdowala sie juz w danym pomieszczeniu \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_pokoj_ae2abc593f35db23a9a1ac75f2d06999c}{boss}}
+\begin{DoxyCompactList}\small\item\em boss okresla, czy w danym pomieszczeniu znajduje sie finalny boss poziomu \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_pokoj_ae141a5cf5b9e735ffd8ab0f4b307a327}{treasure}}
+\begin{DoxyCompactList}\small\item\em treasure okresla, czy w danym pomieszczeniu znajduje sie pokoj z przedmiotem wzmacniajacym gracza \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_pokoj_ade7d07904ed3d3ce2381f709c465b9c2}{liczba\+Nie\+Przeciwnikow}}
+\begin{DoxyCompactList}\small\item\em liczba\+Nie\+Przeciwnikow okresla ile jest obiektow w wektorze przeciwnicy, ktorych nie musimy zabic, aby moc przejsc dalej (liczba obiektow typu ogien) \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_celement_otoczenia}{Celement\+Otoczenia}} $>$ \mbox{\hyperlink{class_c_pokoj_a89d8d99f0b0ee2dd0a3ad1fd91d0f274}{otoczenie}}
+\begin{DoxyCompactList}\small\item\em wektor \mbox{\hyperlink{class_celement_otoczenia}{Celement\+Otoczenia}} otoczenie (kompozycja) zbiera w sobie informacje o unikalnych przeszkodach (elementy otoczenia) \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} $\ast$ $>$ \mbox{\hyperlink{class_c_pokoj_ab94cc2265cd154879e62f3e649a789fe}{przeciwnicy}}
+\begin{DoxyCompactList}\small\item\em wektor \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} przeciwnicy (agregacja) zbiera w sobie informacje o unikalnych przeciwnikach w pokoju \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+klasa \mbox{\hyperlink{class_c_pokoj}{C\+Pokoj}} okresla parametry pokoju (poziom sklada sie z pokoi) 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_pokoj_a6e1b28374526fc44888f29813a5e8649}\label{class_c_pokoj_a6e1b28374526fc44888f29813a5e8649}} 
+\index{CPokoj@{CPokoj}!CPokoj@{CPokoj}}
+\index{CPokoj@{CPokoj}!CPokoj@{CPokoj}}
+\doxysubsubsection{\texorpdfstring{CPokoj()}{CPokoj()}}
+{\footnotesize\ttfamily C\+Pokoj\+::\+C\+Pokoj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+konstruktor klasy \mbox{\hyperlink{class_c_pokoj}{C\+Pokoj}}, ktory inicjalizuje atrybuty obiektu 
+
+\mbox{\Hypertarget{class_c_pokoj_a78938d1b9d00ac1dcc9cb0ccadba8f75}\label{class_c_pokoj_a78938d1b9d00ac1dcc9cb0ccadba8f75}} 
+\index{CPokoj@{CPokoj}!````~CPokoj@{$\sim$CPokoj}}
+\index{````~CPokoj@{$\sim$CPokoj}!CPokoj@{CPokoj}}
+\doxysubsubsection{\texorpdfstring{$\sim$CPokoj()}{~CPokoj()}}
+{\footnotesize\ttfamily C\+Pokoj\+::$\sim$\+C\+Pokoj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+detruktor klasy $\sim$\+C\+Pokoj, ktory sprzata po sobie wskazniki w wektorze przeciwnicy 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_pokoj_ae2abc593f35db23a9a1ac75f2d06999c}\label{class_c_pokoj_ae2abc593f35db23a9a1ac75f2d06999c}} 
+\index{CPokoj@{CPokoj}!boss@{boss}}
+\index{boss@{boss}!CPokoj@{CPokoj}}
+\doxysubsubsection{\texorpdfstring{boss}{boss}}
+{\footnotesize\ttfamily bool C\+Pokoj\+::boss}
+
+
+
+boss okresla, czy w danym pomieszczeniu znajduje sie finalny boss poziomu 
+
+\mbox{\Hypertarget{class_c_pokoj_ade7d07904ed3d3ce2381f709c465b9c2}\label{class_c_pokoj_ade7d07904ed3d3ce2381f709c465b9c2}} 
+\index{CPokoj@{CPokoj}!liczbaNiePrzeciwnikow@{liczbaNiePrzeciwnikow}}
+\index{liczbaNiePrzeciwnikow@{liczbaNiePrzeciwnikow}!CPokoj@{CPokoj}}
+\doxysubsubsection{\texorpdfstring{liczbaNiePrzeciwnikow}{liczbaNiePrzeciwnikow}}
+{\footnotesize\ttfamily int C\+Pokoj\+::liczba\+Nie\+Przeciwnikow}
+
+
+
+liczba\+Nie\+Przeciwnikow okresla ile jest obiektow w wektorze przeciwnicy, ktorych nie musimy zabic, aby moc przejsc dalej (liczba obiektow typu ogien) 
+
+\mbox{\Hypertarget{class_c_pokoj_a4fa04fcaa4ba1807fb5761c6aaf2aca5}\label{class_c_pokoj_a4fa04fcaa4ba1807fb5761c6aaf2aca5}} 
+\index{CPokoj@{CPokoj}!obecnosc@{obecnosc}}
+\index{obecnosc@{obecnosc}!CPokoj@{CPokoj}}
+\doxysubsubsection{\texorpdfstring{obecnosc}{obecnosc}}
+{\footnotesize\ttfamily bool C\+Pokoj\+::obecnosc}
+
+
+
+obecnosc okresla, czy dany pokoj istnieje (czy na planszy poziomu, w danym miejscu jest jakis pokoj) 
+
+\mbox{\Hypertarget{class_c_pokoj_aabb7364086784acdec126798510d26d0}\label{class_c_pokoj_aabb7364086784acdec126798510d26d0}} 
+\index{CPokoj@{CPokoj}!odkryty@{odkryty}}
+\index{odkryty@{odkryty}!CPokoj@{CPokoj}}
+\doxysubsubsection{\texorpdfstring{odkryty}{odkryty}}
+{\footnotesize\ttfamily bool C\+Pokoj\+::odkryty}
+
+
+
+odkryty okresla, czy postac gracza znajdowala sie juz w danym pomieszczeniu 
+
+\mbox{\Hypertarget{class_c_pokoj_a89d8d99f0b0ee2dd0a3ad1fd91d0f274}\label{class_c_pokoj_a89d8d99f0b0ee2dd0a3ad1fd91d0f274}} 
+\index{CPokoj@{CPokoj}!otoczenie@{otoczenie}}
+\index{otoczenie@{otoczenie}!CPokoj@{CPokoj}}
+\doxysubsubsection{\texorpdfstring{otoczenie}{otoczenie}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_celement_otoczenia}{Celement\+Otoczenia}}$>$ C\+Pokoj\+::otoczenie}
+
+
+
+wektor \mbox{\hyperlink{class_celement_otoczenia}{Celement\+Otoczenia}} otoczenie (kompozycja) zbiera w sobie informacje o unikalnych przeszkodach (elementy otoczenia) 
+
+\mbox{\Hypertarget{class_c_pokoj_ab94cc2265cd154879e62f3e649a789fe}\label{class_c_pokoj_ab94cc2265cd154879e62f3e649a789fe}} 
+\index{CPokoj@{CPokoj}!przeciwnicy@{przeciwnicy}}
+\index{przeciwnicy@{przeciwnicy}!CPokoj@{CPokoj}}
+\doxysubsubsection{\texorpdfstring{przeciwnicy}{przeciwnicy}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}}$\ast$$>$ C\+Pokoj\+::przeciwnicy}
+
+
+
+wektor \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} przeciwnicy (agregacja) zbiera w sobie informacje o unikalnych przeciwnikach w pokoju 
+
+\mbox{\Hypertarget{class_c_pokoj_ae141a5cf5b9e735ffd8ab0f4b307a327}\label{class_c_pokoj_ae141a5cf5b9e735ffd8ab0f4b307a327}} 
+\index{CPokoj@{CPokoj}!treasure@{treasure}}
+\index{treasure@{treasure}!CPokoj@{CPokoj}}
+\doxysubsubsection{\texorpdfstring{treasure}{treasure}}
+{\footnotesize\ttfamily bool C\+Pokoj\+::treasure}
+
+
+
+treasure okresla, czy w danym pomieszczeniu znajduje sie pokoj z przedmiotem wzmacniajacym gracza 
+

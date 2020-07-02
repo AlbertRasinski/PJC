@@ -1,0 +1,71 @@
+\hypertarget{class_c_fly}{}\doxysection{C\+Fly Class Reference}
+\label{class_c_fly}\index{CFly@{CFly}}
+
+
+klasa pochodna (polimorfizm po klasie bazowej \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} ) \mbox{\hyperlink{class_c_fly}{C\+Fly}} okresla zachowanie tego typu przeciwnika  
+
+
+
+
+{\ttfamily \#include $<$C\+Fly.\+h$>$}
+
+Inheritance diagram for C\+Fly\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_fly}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_fly_a77f2f38c079463ce5e00082f7ae22f48}{C\+Fly}} (int x, int y)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_c_fly_a526092b0d47d200fc2b05422d2cb3343}{zachowanie\+Przeciwnika}} (int graczX, int graczY, sf\+::\+Time elapsed, std\+::vector$<$ \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} $\ast$ $>$ \&wek)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const double \mbox{\hyperlink{class_c_fly_abb66f59253f7d39731ebadfd832f3597}{Predkosc\+Fly}} = 0.\+1
+\begin{DoxyCompactList}\small\item\em statyczna stala Predkosc\+Fly jest przydatna podczas obliczania predkosci poruszania sie \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+klasa pochodna (polimorfizm po klasie bazowej \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} ) \mbox{\hyperlink{class_c_fly}{C\+Fly}} okresla zachowanie tego typu przeciwnika 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_fly_a77f2f38c079463ce5e00082f7ae22f48}\label{class_c_fly_a77f2f38c079463ce5e00082f7ae22f48}} 
+\index{CFly@{CFly}!CFly@{CFly}}
+\index{CFly@{CFly}!CFly@{CFly}}
+\doxysubsubsection{\texorpdfstring{CFly()}{CFly()}}
+{\footnotesize\ttfamily C\+Fly\+::\+C\+Fly (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\textbackslash{} konstruktor pozwala na inicjalizacje atrybutow klasy \mbox{\hyperlink{class_c_fly}{C\+Fly}} oraz atrybutow klasy bazowej 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_fly_a526092b0d47d200fc2b05422d2cb3343}\label{class_c_fly_a526092b0d47d200fc2b05422d2cb3343}} 
+\index{CFly@{CFly}!zachowaniePrzeciwnika@{zachowaniePrzeciwnika}}
+\index{zachowaniePrzeciwnika@{zachowaniePrzeciwnika}!CFly@{CFly}}
+\doxysubsubsection{\texorpdfstring{zachowaniePrzeciwnika()}{zachowaniePrzeciwnika()}}
+{\footnotesize\ttfamily void C\+Fly\+::zachowanie\+Przeciwnika (\begin{DoxyParamCaption}\item[{int}]{graczX,  }\item[{int}]{graczY,  }\item[{sf\+::\+Time}]{elapsed,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}} $\ast$ $>$ \&}]{wek }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+\textbackslash{} metoda \mbox{\hyperlink{class_c_fly_a526092b0d47d200fc2b05422d2cb3343}{zachowanie\+Przeciwnika()}} przyslania funkcje klasy \mbox{\hyperlink{class_c_przeciwnik}{C\+Przeciwnik}}, okresla jak zachowuje sie nasz przeciwnik. Przeciwnik caly czas porusza sie w kierunku gracza 
+
+Implements \mbox{\hyperlink{class_c_przeciwnik_a2a14d371aa49cd348765b7e68b29e21d}{C\+Przeciwnik}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_fly_abb66f59253f7d39731ebadfd832f3597}\label{class_c_fly_abb66f59253f7d39731ebadfd832f3597}} 
+\index{CFly@{CFly}!PredkoscFly@{PredkoscFly}}
+\index{PredkoscFly@{PredkoscFly}!CFly@{CFly}}
+\doxysubsubsection{\texorpdfstring{PredkoscFly}{PredkoscFly}}
+{\footnotesize\ttfamily const double C\+Fly\+::\+Predkosc\+Fly = 0.\+1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+statyczna stala Predkosc\+Fly jest przydatna podczas obliczania predkosci poruszania sie 
+

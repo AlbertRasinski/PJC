@@ -1,0 +1,87 @@
+\hypertarget{class_c_pociski}{}\doxysection{C\+Pociski Class Reference}
+\label{class_c_pociski}\index{CPociski@{CPociski}}
+
+
+klasa, ktora umozliwia stworzenie obiektow-\/ pociskow  
+
+
+
+
+{\ttfamily \#include $<$C\+Pociski.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_pociski_aa85dfd784aa8d2467943a80a7b8d079b}{C\+Pociski}} (int ppx, int ppy, int opx, int opy, int kierunek\+\_\+)
+\begin{DoxyCompactList}\small\item\em konstruktor struktury \mbox{\hyperlink{class_c_pociski}{C\+Pociski}}, inicjuje wartosci atrybutow jakie posiada pocisk \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c_pociski_afde2efe5eeebd0aa375eea1b9d0758f6}{kierunek}}
+\begin{DoxyCompactList}\small\item\em atrybut kierunek okresla, w ktorym kierunku poruszaja lezki\+: do dolu/gory/prawej/lewej \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}} \mbox{\hyperlink{class_c_pociski_aa358610202a33ae2a2a71bf4db229d9d}{poczatkowe\+Polozenie\+Pociskow}}
+\begin{DoxyCompactList}\small\item\em atrybut \mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}} poczatkowe\+Polozenie\+Pociskow (kompozycja) okresla, w ktorym polozeniu x oraz y zostaly wystrzelone (polozenie postaci w chwili wystrzelenie), pozwala na wyliczenie zasiegu \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}} \mbox{\hyperlink{class_c_pociski_aa2e0239018f3188ce7c6b7ad94c40ebc}{obecne\+Polozenie\+Pociskow}}
+\begin{DoxyCompactList}\small\item\em atrybut \mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}} obecne\+Polozenie\+Pociskow (kompozycja) okresla jakie jest obecne pomieszczenie danego pocisku (w wyniku poruszania lezki) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+klasa, ktora umozliwia stworzenie obiektow-\/ pociskow 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_pociski_aa85dfd784aa8d2467943a80a7b8d079b}\label{class_c_pociski_aa85dfd784aa8d2467943a80a7b8d079b}} 
+\index{CPociski@{CPociski}!CPociski@{CPociski}}
+\index{CPociski@{CPociski}!CPociski@{CPociski}}
+\doxysubsubsection{\texorpdfstring{CPociski()}{CPociski()}}
+{\footnotesize\ttfamily C\+Pociski\+::\+C\+Pociski (\begin{DoxyParamCaption}\item[{int}]{ppx,  }\item[{int}]{ppy,  }\item[{int}]{opx,  }\item[{int}]{opy,  }\item[{int}]{kierunek\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+konstruktor struktury \mbox{\hyperlink{class_c_pociski}{C\+Pociski}}, inicjuje wartosci atrybutow jakie posiada pocisk 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ppx} & okresla poczatkowe\+Polozenie\+Pociskow w osi x \\
+\hline
+{\em ppy} & okresla poczatkowe\+Polozenie\+Pociskow w osi y \\
+\hline
+{\em opx} & okresla obecne\+Polozenie\+Pociskow w osi x \\
+\hline
+{\em opy} & okresla obecne\+Polozenie\+Pociskow w osi y \\
+\hline
+{\em kierunek\+\_\+} & okresla, w ktorym kierunku porusza sie pocisk \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_pociski_afde2efe5eeebd0aa375eea1b9d0758f6}\label{class_c_pociski_afde2efe5eeebd0aa375eea1b9d0758f6}} 
+\index{CPociski@{CPociski}!kierunek@{kierunek}}
+\index{kierunek@{kierunek}!CPociski@{CPociski}}
+\doxysubsubsection{\texorpdfstring{kierunek}{kierunek}}
+{\footnotesize\ttfamily int C\+Pociski\+::kierunek}
+
+
+
+atrybut kierunek okresla, w ktorym kierunku poruszaja lezki\+: do dolu/gory/prawej/lewej 
+
+\mbox{\Hypertarget{class_c_pociski_aa2e0239018f3188ce7c6b7ad94c40ebc}\label{class_c_pociski_aa2e0239018f3188ce7c6b7ad94c40ebc}} 
+\index{CPociski@{CPociski}!obecnePolozeniePociskow@{obecnePolozeniePociskow}}
+\index{obecnePolozeniePociskow@{obecnePolozeniePociskow}!CPociski@{CPociski}}
+\doxysubsubsection{\texorpdfstring{obecnePolozeniePociskow}{obecnePolozeniePociskow}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}} C\+Pociski\+::obecne\+Polozenie\+Pociskow}
+
+
+
+atrybut \mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}} obecne\+Polozenie\+Pociskow (kompozycja) okresla jakie jest obecne pomieszczenie danego pocisku (w wyniku poruszania lezki) 
+
+\mbox{\Hypertarget{class_c_pociski_aa358610202a33ae2a2a71bf4db229d9d}\label{class_c_pociski_aa358610202a33ae2a2a71bf4db229d9d}} 
+\index{CPociski@{CPociski}!poczatkowePolozeniePociskow@{poczatkowePolozeniePociskow}}
+\index{poczatkowePolozeniePociskow@{poczatkowePolozeniePociskow}!CPociski@{CPociski}}
+\doxysubsubsection{\texorpdfstring{poczatkowePolozeniePociskow}{poczatkowePolozeniePociskow}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}} C\+Pociski\+::poczatkowe\+Polozenie\+Pociskow}
+
+
+
+atrybut \mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}} poczatkowe\+Polozenie\+Pociskow (kompozycja) okresla, w ktorym polozeniu x oraz y zostaly wystrzelone (polozenie postaci w chwili wystrzelenie), pozwala na wyliczenie zasiegu 
+

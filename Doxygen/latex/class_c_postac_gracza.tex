@@ -1,0 +1,290 @@
+\hypertarget{class_c_postac_gracza}{}\doxysection{C\+Postac\+Gracza Class Reference}
+\label{class_c_postac_gracza}\index{CPostacGracza@{CPostacGracza}}
+
+
+klasa \mbox{\hyperlink{class_c_postac_gracza}{C\+Postac\+Gracza}} opisuje obiekt glownej postaci, ktora moze sterowac gracz  
+
+
+
+
+{\ttfamily \#include $<$C\+Postac\+Gracza.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_postac_gracza_a87fd7563959fea7caba191db87a28b75}{C\+Postac\+Gracza}} ()
+\begin{DoxyCompactList}\small\item\em konstruktor struktury, inicjuje wartosci atrybutow jakie posiada postac gracza \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_postac_gracza_a2b5871fe2622b51486fdbbe5ae5cfd8e}{poruszanie\+Postaci}} (\mbox{\hyperlink{class_c_sterowanie}{C\+Sterowanie}} klaw, sf\+::\+Time elapsed)
+\begin{DoxyCompactList}\small\item\em metoda, ktora wczytuje polozenie\+Postaci\+Poczatkowe oraz zmienia pozycje i wyglad postaci gracza w zaleznosci od kierunku poruszania (nie sprawdza kolizji) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_postac_gracza_ae13a714faefaa83dd26832d6485bf14e}{granice\+Pokoju}} ()
+\begin{DoxyCompactList}\small\item\em metoda, ktora sprawdza, czy postac nie wykroczyla poza granice pokoju, jesli tak to odpowiednio reaguje \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_postac_gracza_a14b8b3373e546f08137a8afd33522e8b}{kolizja\+Przeciwnik}} (int przeciwnikX, int przeciwnikY, int rozmiarX, int rozmiarY)
+\begin{DoxyCompactList}\small\item\em metoda, ktora sprawdza czy doszlo do kontaktu z okreslonym przeciwnikiem \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_c_postac_gracza_a862bff4dd513c8f220ad656bec00a5e0}{predkosc}}
+\begin{DoxyCompactList}\small\item\em atrybut predkosc okresla obecna predkosc poruszania sie postaci \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_postac_gracza_a3e5f45c45ed46fb410e231b3a4229307}{sila\+Atakow}}
+\begin{DoxyCompactList}\small\item\em atrybut sila\+Atakow okresla obecne obrazenia pojedynczego pocisku zadawane przez gracza \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_postac_gracza_a65d589bcbf4490ea882f1121a031716c}{szybkostrzelnosc}}
+\begin{DoxyCompactList}\small\item\em atrybut szybkostrzelnosc okresla jak szybko nasza postac moze wystrzelic kolejny pocisk \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_postac_gracza_ac03bf8bbb25c77eb30d120240fb6803b}{zasieg}}
+\begin{DoxyCompactList}\small\item\em atrybut zasieg okresla jak daleko moga doleciec pociski wystrzelone przez gracza \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_postac_gracza_aed3a27c85ee77819e64e1a8f96ca44a2}{predkosc\+Pociskow}}
+\begin{DoxyCompactList}\small\item\em atrybut predkosc\+Pociskow okresla jak szybko sie poruszaja po planszy wystrzelone przez gracza pociski \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_postac_gracza_a2297d7aa2163d10fbdfcd9b616a13702}{wyglad\+Postaci}}
+\begin{DoxyCompactList}\small\item\em atrybut wyglad\+Postaci okresla wyglad postaci w zaleznosci w jakim kierunku sie porusza i w ktorym strzela, pomocny przy rysowaniu \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_postac_gracza_aef9a9701bfd07594589633e8384cbdca}{obecne\+PomieszczenieX}}
+\begin{DoxyCompactList}\small\item\em atrybut obecne\+PomieszczenieX okresla, w ktorym obecnie pokoju znajduje sie gracz na poziomie, polozenie X \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_postac_gracza_a97cd7356bb905695f5bdb6a663779eef}{obecne\+PomieszczenieY}}
+\begin{DoxyCompactList}\small\item\em atrybut obecne\+PomieszczenieY okresla, w ktorym obecnie pokoju znajduje sie gracz na poziomie, polozenie Y \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_postac_gracza_a965288cafb821d90094f61f09149a7f1}{odliczanie\+Niewrazliwosci}}
+\begin{DoxyCompactList}\small\item\em atrybut odliczanie\+Niewrazliwosci pozwala, pozwala na wyliczenie czasu jaki pozstal po otrzymaniu obrazenia, po ktorym znowu mozemy byc zranieni \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_postac_gracza_adf3b3539b199063994d9d3019befc45b}{flying}}
+\begin{DoxyCompactList}\small\item\em atrybut flying okresla, czy postac gracza moze przelatywac ponad obiektami, ktore normalnie go blokuja \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_postac_gracza_afc7b62cff480c7272be850348d53da32}{shoots\+Through\+Walls}}
+\begin{DoxyCompactList}\small\item\em atrybut shoots\+Through\+Walls okresla, czy pociski gracza moga przelatywac przez \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}} \mbox{\hyperlink{class_c_postac_gracza_a607ef75234d80bbeb950d8e805ea2020}{polozenie\+Postaci}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}} atrybut polozenie\+Postaci (kompozycja) okresla obecna pozycje x oraz y postaci gracza na plaszczyznie. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}} \mbox{\hyperlink{class_c_postac_gracza_a60767c4b9d6e5a7a48473ba3af34c937}{polozenie\+Postaci\+Poczatkowe}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}} atrybut polozenie\+Postaci\+Poczatkowe (kompozycja) okresla, jaka byla pozycja x y postaci gracza w poprzednim kroku wykonywania obliczen, pomaga w okresleniu kolizji postaci z obiektami na planszy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_c_zycie}{C\+Zycie}} \mbox{\hyperlink{class_c_postac_gracza_a5e8b3d1b976b27e5155dbb007c99477b}{zycie\+Postaci}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_c_zycie}{C\+Zycie}} atrybut zycie\+Postaci (kompozycja) okresla, jaki jest obecny stan zdrowia oraz jakie jest maksymalne mozliwe zycie postaci gracza. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const double \mbox{\hyperlink{class_c_postac_gracza_a285751a09d95315db031c42ae258d84f}{czas\+Niewrazliwosci}} = 1
+\begin{DoxyCompactList}\small\item\em statyczna stala zmienna czas\+Niewrazliwosci okresla jaki jest czas pomiedzy kolejnymi mozliwymi momentami przyjecia obrazen przez gracza \end{DoxyCompactList}\item 
+static const double \mbox{\hyperlink{class_c_postac_gracza_a701f30d8a6d8ebe1cc849694e3a31855}{stala\+Predkosc\+Postaci}} = 0.\+08
+\begin{DoxyCompactList}\small\item\em statyczna stala zmienna stala\+Predkosc\+Postaci pomaga wyliczyc predkosc poruszania sie gracza \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+klasa \mbox{\hyperlink{class_c_postac_gracza}{C\+Postac\+Gracza}} opisuje obiekt glownej postaci, ktora moze sterowac gracz 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_postac_gracza_a87fd7563959fea7caba191db87a28b75}\label{class_c_postac_gracza_a87fd7563959fea7caba191db87a28b75}} 
+\index{CPostacGracza@{CPostacGracza}!CPostacGracza@{CPostacGracza}}
+\index{CPostacGracza@{CPostacGracza}!CPostacGracza@{CPostacGracza}}
+\doxysubsubsection{\texorpdfstring{CPostacGracza()}{CPostacGracza()}}
+{\footnotesize\ttfamily C\+Postac\+Gracza\+::\+C\+Postac\+Gracza (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+konstruktor struktury, inicjuje wartosci atrybutow jakie posiada postac gracza 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_postac_gracza_ae13a714faefaa83dd26832d6485bf14e}\label{class_c_postac_gracza_ae13a714faefaa83dd26832d6485bf14e}} 
+\index{CPostacGracza@{CPostacGracza}!granicePokoju@{granicePokoju}}
+\index{granicePokoju@{granicePokoju}!CPostacGracza@{CPostacGracza}}
+\doxysubsubsection{\texorpdfstring{granicePokoju()}{granicePokoju()}}
+{\footnotesize\ttfamily void C\+Postac\+Gracza\+::granice\+Pokoju (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+metoda, ktora sprawdza, czy postac nie wykroczyla poza granice pokoju, jesli tak to odpowiednio reaguje 
+
+\mbox{\Hypertarget{class_c_postac_gracza_a14b8b3373e546f08137a8afd33522e8b}\label{class_c_postac_gracza_a14b8b3373e546f08137a8afd33522e8b}} 
+\index{CPostacGracza@{CPostacGracza}!kolizjaPrzeciwnik@{kolizjaPrzeciwnik}}
+\index{kolizjaPrzeciwnik@{kolizjaPrzeciwnik}!CPostacGracza@{CPostacGracza}}
+\doxysubsubsection{\texorpdfstring{kolizjaPrzeciwnik()}{kolizjaPrzeciwnik()}}
+{\footnotesize\ttfamily bool C\+Postac\+Gracza\+::kolizja\+Przeciwnik (\begin{DoxyParamCaption}\item[{int}]{przeciwnikX,  }\item[{int}]{przeciwnikY,  }\item[{int}]{rozmiarX,  }\item[{int}]{rozmiarY }\end{DoxyParamCaption})}
+
+
+
+metoda, ktora sprawdza czy doszlo do kontaktu z okreslonym przeciwnikiem 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parametr} & przciwnikX okresla polozenie X przeciwnika na planszy \\
+\hline
+{\em parametr} & przciwnikY okresla polozenie Y przeciwnika na planszy \\
+\hline
+{\em parametr} & rozmiarX okresla ile pikseli od przeciwnika w osi x oznacza ewentualne przyjecie obrazen \\
+\hline
+{\em parametr} & rozmiarY okresla ile pikseli od przeciwnika w osi y oznacza ewentualne przyjecie obrazen \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_postac_gracza_a2b5871fe2622b51486fdbbe5ae5cfd8e}\label{class_c_postac_gracza_a2b5871fe2622b51486fdbbe5ae5cfd8e}} 
+\index{CPostacGracza@{CPostacGracza}!poruszaniePostaci@{poruszaniePostaci}}
+\index{poruszaniePostaci@{poruszaniePostaci}!CPostacGracza@{CPostacGracza}}
+\doxysubsubsection{\texorpdfstring{poruszaniePostaci()}{poruszaniePostaci()}}
+{\footnotesize\ttfamily void C\+Postac\+Gracza\+::poruszanie\+Postaci (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_sterowanie}{C\+Sterowanie}}}]{klaw,  }\item[{sf\+::\+Time}]{elapsed }\end{DoxyParamCaption})}
+
+
+
+metoda, ktora wczytuje polozenie\+Postaci\+Poczatkowe oraz zmienia pozycje i wyglad postaci gracza w zaleznosci od kierunku poruszania (nie sprawdza kolizji) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_c_sterowanie}{C\+Sterowanie}}} & klaw okresla, ktore przyciski sa obecnie wcisniete \\
+\hline
+{\em elapsed} & okresla umozliwia okreslenie jaki czas minal od poprzedniego kroku wykonywania obliczen \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_postac_gracza_a285751a09d95315db031c42ae258d84f}\label{class_c_postac_gracza_a285751a09d95315db031c42ae258d84f}} 
+\index{CPostacGracza@{CPostacGracza}!czasNiewrazliwosci@{czasNiewrazliwosci}}
+\index{czasNiewrazliwosci@{czasNiewrazliwosci}!CPostacGracza@{CPostacGracza}}
+\doxysubsubsection{\texorpdfstring{czasNiewrazliwosci}{czasNiewrazliwosci}}
+{\footnotesize\ttfamily const double C\+Postac\+Gracza\+::czas\+Niewrazliwosci = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+statyczna stala zmienna czas\+Niewrazliwosci okresla jaki jest czas pomiedzy kolejnymi mozliwymi momentami przyjecia obrazen przez gracza 
+
+\mbox{\Hypertarget{class_c_postac_gracza_adf3b3539b199063994d9d3019befc45b}\label{class_c_postac_gracza_adf3b3539b199063994d9d3019befc45b}} 
+\index{CPostacGracza@{CPostacGracza}!flying@{flying}}
+\index{flying@{flying}!CPostacGracza@{CPostacGracza}}
+\doxysubsubsection{\texorpdfstring{flying}{flying}}
+{\footnotesize\ttfamily bool C\+Postac\+Gracza\+::flying}
+
+
+
+atrybut flying okresla, czy postac gracza moze przelatywac ponad obiektami, ktore normalnie go blokuja 
+
+\mbox{\Hypertarget{class_c_postac_gracza_aef9a9701bfd07594589633e8384cbdca}\label{class_c_postac_gracza_aef9a9701bfd07594589633e8384cbdca}} 
+\index{CPostacGracza@{CPostacGracza}!obecnePomieszczenieX@{obecnePomieszczenieX}}
+\index{obecnePomieszczenieX@{obecnePomieszczenieX}!CPostacGracza@{CPostacGracza}}
+\doxysubsubsection{\texorpdfstring{obecnePomieszczenieX}{obecnePomieszczenieX}}
+{\footnotesize\ttfamily int C\+Postac\+Gracza\+::obecne\+PomieszczenieX}
+
+
+
+atrybut obecne\+PomieszczenieX okresla, w ktorym obecnie pokoju znajduje sie gracz na poziomie, polozenie X 
+
+\mbox{\Hypertarget{class_c_postac_gracza_a97cd7356bb905695f5bdb6a663779eef}\label{class_c_postac_gracza_a97cd7356bb905695f5bdb6a663779eef}} 
+\index{CPostacGracza@{CPostacGracza}!obecnePomieszczenieY@{obecnePomieszczenieY}}
+\index{obecnePomieszczenieY@{obecnePomieszczenieY}!CPostacGracza@{CPostacGracza}}
+\doxysubsubsection{\texorpdfstring{obecnePomieszczenieY}{obecnePomieszczenieY}}
+{\footnotesize\ttfamily int C\+Postac\+Gracza\+::obecne\+PomieszczenieY}
+
+
+
+atrybut obecne\+PomieszczenieY okresla, w ktorym obecnie pokoju znajduje sie gracz na poziomie, polozenie Y 
+
+\mbox{\Hypertarget{class_c_postac_gracza_a965288cafb821d90094f61f09149a7f1}\label{class_c_postac_gracza_a965288cafb821d90094f61f09149a7f1}} 
+\index{CPostacGracza@{CPostacGracza}!odliczanieNiewrazliwosci@{odliczanieNiewrazliwosci}}
+\index{odliczanieNiewrazliwosci@{odliczanieNiewrazliwosci}!CPostacGracza@{CPostacGracza}}
+\doxysubsubsection{\texorpdfstring{odliczanieNiewrazliwosci}{odliczanieNiewrazliwosci}}
+{\footnotesize\ttfamily double C\+Postac\+Gracza\+::odliczanie\+Niewrazliwosci}
+
+
+
+atrybut odliczanie\+Niewrazliwosci pozwala, pozwala na wyliczenie czasu jaki pozstal po otrzymaniu obrazenia, po ktorym znowu mozemy byc zranieni 
+
+\mbox{\Hypertarget{class_c_postac_gracza_a607ef75234d80bbeb950d8e805ea2020}\label{class_c_postac_gracza_a607ef75234d80bbeb950d8e805ea2020}} 
+\index{CPostacGracza@{CPostacGracza}!polozeniePostaci@{polozeniePostaci}}
+\index{polozeniePostaci@{polozeniePostaci}!CPostacGracza@{CPostacGracza}}
+\doxysubsubsection{\texorpdfstring{polozeniePostaci}{polozeniePostaci}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}} C\+Postac\+Gracza\+::polozenie\+Postaci}
+
+
+
+\mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}} atrybut polozenie\+Postaci (kompozycja) okresla obecna pozycje x oraz y postaci gracza na plaszczyznie. 
+
+\mbox{\Hypertarget{class_c_postac_gracza_a60767c4b9d6e5a7a48473ba3af34c937}\label{class_c_postac_gracza_a60767c4b9d6e5a7a48473ba3af34c937}} 
+\index{CPostacGracza@{CPostacGracza}!polozeniePostaciPoczatkowe@{polozeniePostaciPoczatkowe}}
+\index{polozeniePostaciPoczatkowe@{polozeniePostaciPoczatkowe}!CPostacGracza@{CPostacGracza}}
+\doxysubsubsection{\texorpdfstring{polozeniePostaciPoczatkowe}{polozeniePostaciPoczatkowe}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}} C\+Postac\+Gracza\+::polozenie\+Postaci\+Poczatkowe}
+
+
+
+\mbox{\hyperlink{struct_c_polozenie}{C\+Polozenie}} atrybut polozenie\+Postaci\+Poczatkowe (kompozycja) okresla, jaka byla pozycja x y postaci gracza w poprzednim kroku wykonywania obliczen, pomaga w okresleniu kolizji postaci z obiektami na planszy. 
+
+\mbox{\Hypertarget{class_c_postac_gracza_a862bff4dd513c8f220ad656bec00a5e0}\label{class_c_postac_gracza_a862bff4dd513c8f220ad656bec00a5e0}} 
+\index{CPostacGracza@{CPostacGracza}!predkosc@{predkosc}}
+\index{predkosc@{predkosc}!CPostacGracza@{CPostacGracza}}
+\doxysubsubsection{\texorpdfstring{predkosc}{predkosc}}
+{\footnotesize\ttfamily double C\+Postac\+Gracza\+::predkosc}
+
+
+
+atrybut predkosc okresla obecna predkosc poruszania sie postaci 
+
+\mbox{\Hypertarget{class_c_postac_gracza_aed3a27c85ee77819e64e1a8f96ca44a2}\label{class_c_postac_gracza_aed3a27c85ee77819e64e1a8f96ca44a2}} 
+\index{CPostacGracza@{CPostacGracza}!predkoscPociskow@{predkoscPociskow}}
+\index{predkoscPociskow@{predkoscPociskow}!CPostacGracza@{CPostacGracza}}
+\doxysubsubsection{\texorpdfstring{predkoscPociskow}{predkoscPociskow}}
+{\footnotesize\ttfamily double C\+Postac\+Gracza\+::predkosc\+Pociskow}
+
+
+
+atrybut predkosc\+Pociskow okresla jak szybko sie poruszaja po planszy wystrzelone przez gracza pociski 
+
+\mbox{\Hypertarget{class_c_postac_gracza_afc7b62cff480c7272be850348d53da32}\label{class_c_postac_gracza_afc7b62cff480c7272be850348d53da32}} 
+\index{CPostacGracza@{CPostacGracza}!shootsThroughWalls@{shootsThroughWalls}}
+\index{shootsThroughWalls@{shootsThroughWalls}!CPostacGracza@{CPostacGracza}}
+\doxysubsubsection{\texorpdfstring{shootsThroughWalls}{shootsThroughWalls}}
+{\footnotesize\ttfamily bool C\+Postac\+Gracza\+::shoots\+Through\+Walls}
+
+
+
+atrybut shoots\+Through\+Walls okresla, czy pociski gracza moga przelatywac przez 
+
+\mbox{\Hypertarget{class_c_postac_gracza_a3e5f45c45ed46fb410e231b3a4229307}\label{class_c_postac_gracza_a3e5f45c45ed46fb410e231b3a4229307}} 
+\index{CPostacGracza@{CPostacGracza}!silaAtakow@{silaAtakow}}
+\index{silaAtakow@{silaAtakow}!CPostacGracza@{CPostacGracza}}
+\doxysubsubsection{\texorpdfstring{silaAtakow}{silaAtakow}}
+{\footnotesize\ttfamily double C\+Postac\+Gracza\+::sila\+Atakow}
+
+
+
+atrybut sila\+Atakow okresla obecne obrazenia pojedynczego pocisku zadawane przez gracza 
+
+\mbox{\Hypertarget{class_c_postac_gracza_a701f30d8a6d8ebe1cc849694e3a31855}\label{class_c_postac_gracza_a701f30d8a6d8ebe1cc849694e3a31855}} 
+\index{CPostacGracza@{CPostacGracza}!stalaPredkoscPostaci@{stalaPredkoscPostaci}}
+\index{stalaPredkoscPostaci@{stalaPredkoscPostaci}!CPostacGracza@{CPostacGracza}}
+\doxysubsubsection{\texorpdfstring{stalaPredkoscPostaci}{stalaPredkoscPostaci}}
+{\footnotesize\ttfamily const double C\+Postac\+Gracza\+::stala\+Predkosc\+Postaci = 0.\+08\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+statyczna stala zmienna stala\+Predkosc\+Postaci pomaga wyliczyc predkosc poruszania sie gracza 
+
+\mbox{\Hypertarget{class_c_postac_gracza_a65d589bcbf4490ea882f1121a031716c}\label{class_c_postac_gracza_a65d589bcbf4490ea882f1121a031716c}} 
+\index{CPostacGracza@{CPostacGracza}!szybkostrzelnosc@{szybkostrzelnosc}}
+\index{szybkostrzelnosc@{szybkostrzelnosc}!CPostacGracza@{CPostacGracza}}
+\doxysubsubsection{\texorpdfstring{szybkostrzelnosc}{szybkostrzelnosc}}
+{\footnotesize\ttfamily double C\+Postac\+Gracza\+::szybkostrzelnosc}
+
+
+
+atrybut szybkostrzelnosc okresla jak szybko nasza postac moze wystrzelic kolejny pocisk 
+
+\mbox{\Hypertarget{class_c_postac_gracza_a2297d7aa2163d10fbdfcd9b616a13702}\label{class_c_postac_gracza_a2297d7aa2163d10fbdfcd9b616a13702}} 
+\index{CPostacGracza@{CPostacGracza}!wygladPostaci@{wygladPostaci}}
+\index{wygladPostaci@{wygladPostaci}!CPostacGracza@{CPostacGracza}}
+\doxysubsubsection{\texorpdfstring{wygladPostaci}{wygladPostaci}}
+{\footnotesize\ttfamily int C\+Postac\+Gracza\+::wyglad\+Postaci}
+
+
+
+atrybut wyglad\+Postaci okresla wyglad postaci w zaleznosci w jakim kierunku sie porusza i w ktorym strzela, pomocny przy rysowaniu 
+
+\mbox{\Hypertarget{class_c_postac_gracza_ac03bf8bbb25c77eb30d120240fb6803b}\label{class_c_postac_gracza_ac03bf8bbb25c77eb30d120240fb6803b}} 
+\index{CPostacGracza@{CPostacGracza}!zasieg@{zasieg}}
+\index{zasieg@{zasieg}!CPostacGracza@{CPostacGracza}}
+\doxysubsubsection{\texorpdfstring{zasieg}{zasieg}}
+{\footnotesize\ttfamily double C\+Postac\+Gracza\+::zasieg}
+
+
+
+atrybut zasieg okresla jak daleko moga doleciec pociski wystrzelone przez gracza 
+
+\mbox{\Hypertarget{class_c_postac_gracza_a5e8b3d1b976b27e5155dbb007c99477b}\label{class_c_postac_gracza_a5e8b3d1b976b27e5155dbb007c99477b}} 
+\index{CPostacGracza@{CPostacGracza}!zyciePostaci@{zyciePostaci}}
+\index{zyciePostaci@{zyciePostaci}!CPostacGracza@{CPostacGracza}}
+\doxysubsubsection{\texorpdfstring{zyciePostaci}{zyciePostaci}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_zycie}{C\+Zycie}} C\+Postac\+Gracza\+::zycie\+Postaci}
+
+
+
+\mbox{\hyperlink{struct_c_zycie}{C\+Zycie}} atrybut zycie\+Postaci (kompozycja) okresla, jaki jest obecny stan zdrowia oraz jakie jest maksymalne mozliwe zycie postaci gracza. 
+
